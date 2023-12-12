@@ -3,7 +3,7 @@ import {
     youtubedl,
     youtubedlv2
 } from "@bochilteam/scraper"
-let limit = 80
+let limit = 80000
 
 export async function before(m) {
 const regex = /^https?:\/\/(www\.)?youtube\.com\/watch\?v=[a-zA-Z0-9_-]{11}$/;
