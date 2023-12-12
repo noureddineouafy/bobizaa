@@ -20,7 +20,7 @@ global.owner = [
 global.suittag = ['212605784394'];
 global.prems = ['212605784394'];
 
-global.packname = 'Sticker';
+global.packname = 'bobiza bot';
 global.author = 'bobiza';
 global.wm = 'bobiza';
 global.titulowm = 'bobiza';
