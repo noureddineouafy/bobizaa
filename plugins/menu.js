@@ -31,6 +31,7 @@ const caption =`
 *.ytv*
 *.yts*
 *.ytmp4*
+*.ytvideo*
 *.ytdoc*
 *.storyset*
 *.spotifysearch*
