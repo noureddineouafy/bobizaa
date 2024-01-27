@@ -6,6 +6,7 @@ const caption =`
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁🤖
 
 *.bardai*
+*.aivoice*
 *.bingcreate*
 *.chawnyma*
 *.ai*
@@ -74,7 +75,7 @@ const caption =`
 *.recolor*
 *.qr*
 *.jadibot*
-
+*.tourl*
 
 🛡️‎‎صاحب البوت ‎‎
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁🏃
