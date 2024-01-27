@@ -1535,16 +1535,16 @@ let date = d.toLocaleDateString('es', { day: 'numeric', month: 'long', year: 'nu
 
 global.dfail = (type, m, conn) => {
   const msg = {
-    rowner: '*[ ℹ️ ] This command can only be used by the bot owner.*',
-    owner: '*[ ℹ️ ] This command can only be used by the bot owner.*',
-    mods: '*[ ℹ️ ] This command can only be used by moderators and the bot owner.*',
-    premium: '*[ ℹ️ ] This command can only be used by premium users and the bot owner.*',
-    group: '*[ ℹ️ ] This command can only be used in groups.*',
-    private: '*[ ℹ️ ] This command can only be used in the bot s private chat.*',
-    admin: '*[ ℹ️ ] This command can only be used by group administrators.*',
-    botAdmin: '*[ ℹ️ ] To use this command it is necessary that the bot be an administrator of the group.*',
-    unreg: '*[ ℹ️ ] To use this command you must be registered.*\n\n*[ 💡 ] Use the command:* _#verify name.age_ *to register.*',
-    restrict: '*[ ℹ️ ] This command was disabled by the bot owner.*',
+    rowner: '*[ ℹ️ ] لا يمكن استخدام هذا الأمر إلا من قبل مالك الروبوت.*',
+    owner: '*[ ℹ️ ] لا يمكن استخدام هذا الأمر إلا من قبل مالك الروبوت.*',
+    mods: '*[ ℹ️ ] لا يمكن استخدام هذا الأمر إلا من قبل المشرفين ومالك الروبوت.*',
+    premium: '*[ ℹ️ ] لا يمكن استخدام هذا الأمر إلا من قبل المستخدمين المميزين ومالك الروبوت.*',
+    group: '*[ ℹ️ ] لا يمكن استخدام هذا الأمر إلا في المجموعات.*',
+    private: '*[ ℹ️ ] لا يمكن استخدام هذا الأمر إلا في الدردشة الخاصة للروبوت.*',
+    admin: '*[ ℹ️ ] لا يمكن استخدام هذا الأمر إلا من قبل مسؤولي المجموعة.*',
+    botAdmin: '*[ ℹ️ ] لاستخدام هذا الأمر، من الضروري أن يكون الروبوت مسؤولا عن المجموعة.*',
+    unreg: '*[ ℹ️ ] لاستخدام هذا الأمر، يجب أن تكون مسجلا.*\n\n*[ 💡 ] Use the command:* _#verify name.age_ *to register.*',
+    restrict: '*[ ℹ️ ] تم تعطيل هذا الأمر من قبل مالك الروبوت.*',
   }[type];
   const aa = {quoted: m, userJid: conn.user.jid};
   const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: msg, contextInfo: {externalAdReply: {title: '*[ ⚠ ] Warning*', body: 'BOBIZABOT', thumbnail: imagen1, sourceUrl: 'https://instagram.com/noureddine_ouafy'}}}}, aa);
