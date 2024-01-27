@@ -18,19 +18,14 @@ let sn = createHash('md5').update(who).digest('hex')
 // • @${who.replace(/@.+/, '')}
 let str = `*🪪 Name:* ${username}${about ? '\n\n 🎌 *Bio:* ' + about : ''}
 
-*⚠️ Warnings:* ${warn}/${maxwarn}
+*💴 النقود :* ${credit}
+*⬆️ اكس بي* : Total ${exp} (${user.exp - min} / ${xp})\n${math <= 0 ? `Ready for *${usedPrefix}مستوى أعلى*` : `*${math}xp* في عداد المفقودين لرفع المستوى`}
 
-*💰 Gold :* ${credit}
+*🏆 رتبة:* ${role}
 
-*✨ Level* : ${level}
+*📇 مسجل :* ${registered ? 'Yes': 'No'}
 
-*⬆️ XP* : Total ${exp} (${user.exp - min} / ${xp})\n${math <= 0 ? `Ready for *${usedPrefix}levelup*` : `*${math}xp* missing to level up`}
-
-*🏆 Rank:* ${role}
-
-*📇 Registered :* ${registered ? 'Yes': 'No'}
-
-*⭐ Premium* : ${prem ? 'Yes' : 'No'}
+*⭐ مميز* : ${prem ? 'Yes' : 'No'}
 `
     conn.sendFile(m.chat, pp, 'profil.jpg', str, m, false, { mentions: [who] })
     m.react(done)
