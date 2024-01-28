@@ -8,20 +8,20 @@ import axios from 'axios';
 import moment from 'moment-timezone';
 
 global.owner = [
-  ['22247072475', '🔪 JOHAN ', true],
-  ['22247072475', ' 3MK 💸', true],
+  ['22237979043', '🔪 JOHAN ', true],
+  ['22237979043', ' 3MK 💸', true],
 ];
 
 global.xaxa = 'kana'
-global.suittag = ['22247072475', '2247072475'];
-global.prems = ['22247072475', '22247072475'];
+global.suittag = ['22237979043', '22237979043'];
+global.prems = ['22237979043', '22237979043'];
 
-global.packname = 'KANA ';
-global.author = '★KANA★';
-global.wm = '★KANA BOT★';
-global.titulowm = ' KANA ';
-global.titulowm2 = ` KANA `
-global.igfg = ' KANA ';
+global.packname = 'LUFFY ';
+global.author = '★LUFFY★';
+global.wm = '★LUFFY BOT★';
+global.titulowm = ' LUFFY ';
+global.titulowm2 = ` LUFFY `
+global.igfg = ' LUFFY ';
 global.wait = '*⌛ _جاري التحميل..._*\n\n*▰▰▰▱▱▱▱▱*';
 
 global.imagen1 = fs.readFileSync('./Menu2.jpg');
