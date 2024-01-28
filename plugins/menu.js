@@ -5,6 +5,7 @@ const caption =`
   ‎‎الذكاء الاصطناعي ومشتقاته
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁🤖
 
+*.bingimg*
 *.bardai*
 *.aivoice*
 *.bingcreate*
@@ -12,6 +13,7 @@ const caption =`
 *.ai*
 *.ai2*
 *.dalle2*
+*.art*
 *.resvimg*
 *.chatgbt*
 *.drawing*
@@ -83,6 +85,7 @@ const caption =`
 *.tagall*
 *.setpp*
 *.owner*
+*.hidetag*
 *.cleartmp*
 
   البوت فيه ميزة التحميل التلقائي من انستغرام وفيسبوك ويوتوب ♥

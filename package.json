@@ -78,6 +78,7 @@
     "yt-search":"*",
     "wibusoft":"*",
     "gemini-ai":"*",
+    "didyoumean":"*",
     "similarity": "^1.2.1",
     "socket.io": "^4.4.1",
     "moment-timezone":"*",
@@ -86,7 +87,7 @@
     "url-regex-safe": "^3.0.0",
     "wa-sticker-formatter": "^4.3.2",
     "ws": "^8.14.2",
-    "openai":"*",
+    "openai": "^3.1.0",
     "hxz-api":"*",
     "yargs": "^17.3.1",
     "ytdl-core": "github:khlevon/node-ytdl-core#v4.11.4-patch.2"
