@@ -78,6 +78,7 @@
     "yt-search":"*",
     "wibusoft":"*",
     "gemini-ai":"*",
+    "didyoumean":"*",
     "similarity": "^1.2.1",
     "socket.io": "^4.4.1",
     "moment-timezone":"*",
