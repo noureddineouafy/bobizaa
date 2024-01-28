@@ -84,6 +84,7 @@ const caption =`
 *.tagall*
 *.setpp*
 *.owner*
+*.hidetag*
 *.cleartmp*
 
   البوت فيه ميزة التحميل التلقائي من انستغرام وفيسبوك ويوتوب ♥
