@@ -13,6 +13,7 @@ const caption =`
 *.ai*
 *.ai2*
 *.dalle2*
+*.art*
 *.resvimg*
 *.chatgbt*
 *.drawing*
