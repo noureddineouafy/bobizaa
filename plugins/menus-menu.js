@@ -34,7 +34,7 @@ let rtotalreg = Object.values(global.db.data.users).filter(user => user.register
 let more = String.fromCharCode(8206)
 let readMore = more.repeat(900) 
   const taguser = '@' +  m.sender.split('@s.whatsapp.net')[0];
-let str = `𝕙𝕚 𝕚𝕞 𝕝𝕦𝕗𝕗𝕪 𝕓𝕠𝕥 (∪.∪ )...zzz
+let str = `LUFFY BOT 
 
  *مرحبا,* ${taguser}
 
@@ -46,11 +46,11 @@ let str = `𝕙𝕚 𝕚𝕞 𝕝𝕦𝕗𝕗𝕪 𝕓𝕠𝕥 (∪.∪ )...zzz
  ▢ *الماس:* ${limit}
  ▢ *عملاتك:* ${money}
  ▢ *الرموز:* ${joincount}
- ▢ *مميز:* ${user.premiumTime > 0 ? '✅' : (isPrems ? 'تحلم' : 'واسطة') || ''}
+ ▢ *مميز:* ${user.premiumTime > 0 ? '✅' : (isPrems ? '✅' : '❌') || ''}
  ${readMore}
 
 ⁂ 🖇│الـجـروب│🖇⁂
-   *^____^*   
+     
 * » 👻│ضيف* 
 * » 💩│طرد*
 * » 🐱‍🏍│ترقية*
