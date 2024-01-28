@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 
 let handler = async (m, { text, conn, usedPrefix, command }) => {
   if (!text && !(m.quoted && m.quoted.text)) {
-    throw `Please provide some text or quote a message to get a response.`;
+    throw `يرجى تقديم بعض النص أو اقتباس رسالة للحصول على رد.`;
   }
 
   if (!text && m.quoted && m.quoted.text) {
