@@ -1,28 +1,38 @@
-let handler = async (m, { conn, text }) => {
-    let who
-    if (m.isGroup) who = m.mentionedJid[0]
-    else who = m.chat
-    if (!who) throw '✳️ tag the user'
-    let txt = text.replace('@' + who.split`@`[0], '').trim()
-    if (!txt) throw '✳️ Enter the amount of *Gold* you want to add'
-    if (isNaN(txt)) throw '🔢 only numbers'
-    let dmt = parseInt(txt)
-    let diamond = dmt
+let handler = async (m, {conn, usedPrefix}) => {
+	
+    let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+    let user = global.db.data.users[who]
+    let username = conn.getName(who)
+    //let { wealth } = global.db.data.users[who]
+    if (!(who in global.db.data.users)) throw `✳️ The user is not found in my database`
+
+    var wealth = 'Broke😭'
+     if (`${user.bank}`           <= 3000){
+            wealth = 'Broke😭'
+      } else if (`${user.bank}`   <= 6000){
+            wealth = 'Poor😢'
+        } else if (`${user.bank}` <= 100000){
+            wealth = 'Average💸'
+        } else if (`${user.bank}` <= 1000000){
+            wealth = 'Rich💸💰'
+        } else if (`${user.bank}` <= 10000000){
+            wealth = 'Millionaire🤑'
+        } else if (`${user.bank}` <= 1000000000){
+            wealth = 'Multi-Millionaire🤑'
+        } else if (`${user.bank}` <= 10000000000){
+            wealth = 'Billionaire🤑🤑'
+        }    
     
-    if (diamond < 1) throw '✳️ Mínimum  *1*'
-    let users = global.db.data.users
-   users[who].credit += dmt
+    conn.reply(m.chat, `🏦 *Bank | ${username}*
 
-    await m.reply(`≡ *Gold ADDED*
-┌──────────────
-▢ *Total:* ${dmt}
-└──────────────`)
-   conn.fakeReply(m.chat, `▢ Did you receive \n\n *+${dmt}* Gold`, who, m.text)
+*🪙 Gold* : ${user.bank}
+
+*Wealth :* ${wealth}
+
+`, m, { mentions: [who] })  //${user.chicken}
 }
-
-handler.help = ['addgold <@user>']
+handler.help = ['bank']
 handler.tags = ['economy']
-handler.command = ['addgold'] 
-handler.rowner = true
+handler.command = ['bank', 'vault'] 
 
 export default handler
