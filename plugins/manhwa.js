@@ -30,7 +30,7 @@ let handler = async (m, { conn, text }) => {
         lastEpisodeUrl = json2.data.urls[json2.data.urls.length - 1];
     }
 
-    let message = `Name: ${json2.data.title}\n\nDescription: ${json2.data.description}\n\nGenre: ${json2.data.genre}\n\nStatus: ${json2.data.status}\n\nLast Episode: ${lastEpisodeUrl}\n`
+    let message = `اسم: ${json2.data.title}\n\nوصف: ${json2.data.description}\n\nالنوع: ${json2.data.genre}\n\nحالة: ${json2.data.status}\n\nالحلقة الاخيرة: ${lastEpisodeUrl}\n`
     
     let thumb = json.data[0].image;
 
@@ -42,6 +42,6 @@ let handler = async (m, { conn, text }) => {
 
 handler.help = ['manhwa'];
 handler.tags = ['anime'];
-handler.command = /^manhwa/i;
+handler.command = /^مانهوا/i;
 
 export default handler;
