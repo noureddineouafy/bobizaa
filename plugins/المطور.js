@@ -34,14 +34,15 @@ let rtotalreg = Object.values(global.db.data.users).filter(user => user.register
 let more = String.fromCharCode(8206)
 let readMore = more.repeat(900) 
   const taguser = '@' +  m.sender.split('@s.whatsapp.net')[0];
-let str = ` ⇟ *معلومات المطور* ⇟
-✧⏤✧⏤✧⏤✧⏤✧⏤✧⏤✧⏤✧
+let str = ` 
+✧⏤✧⏤ *حالة* ⏤✧⏤✧⏤✧
 🦾 اهلا,* ${taguser}
 ⩥ الوقت${uptime}
 ⩥ التاريخ${date}
-⩥ التوقيت${web}
 ⩥ المستخدمين${rtotalreg}
 ⩥ المنصه ⩾ HEROKU
+✧⏤✧⏤✧⏤✧⏤✧⏤✧⏤✧⏤✧
+⇟ *معلومات المطور* ⇟
 𐎄   🤿‏محمد 𓂄*اسم المطور*𓂁
 
 𐎄 𓂄 JOHAN ⚰𓂁*لقب المطور* 
