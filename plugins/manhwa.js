@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 
 
 let handler = async (m, { conn, text }) => {
-    if (!text) throw 'Please provide manhwa name to search for.';
+    if (!text) throw 'يرجى تقديم اسم مانهوا للبحث عنه.';
     let query = encodeURIComponent(text)
 
     const url = `https://asura.guruapi.tech/asura/search?name=${query}`;
