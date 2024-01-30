@@ -9,14 +9,14 @@ let handler = async (m, { conn }) => {
     if (!canLevelUp(user.level, user.exp, global.multiplier)) {
         let { min, xp, max } = xpRange(user.level, global.multiplier);
         let txt = `
-┌───⊷ *LEVEL*
-▢ Number : *${name}*
-▢ Level : *${user.level}*
-▢ XP : *${user.exp - min}/${xp}*
-▢ Role : *${user.role}*
+┌───⊷ *مستوى*
+▢ رقم : *${name}*
+▢ مستوى : *${user.level}*
+▢ اكس بي : *${user.exp - min}/${xp}*
+▢ دور : *${user.role}*
 └──────────────
 
-Hey there, ${name}! You're not ready to level up just yet. It seems like you need to munch up *${max - user.exp}* more XP to level up and reach new heights! Keep going, and the bots will be singing your praises soon! 🚀
+مرحبًا يا من هناك, ${name}! أنت لست مستعدًا للارتقاء بالمستوى بعد. يبدو أنك بحاجة إلى تناول الطعام *${max - user.exp}* المزيد من XP للارتقاء بالمستوى والوصول إلى آفاق جديدة! استمر، وسوف تغني الروبوتات مديحك قريبًا! 🚀
 `.trim();
 
         try {
@@ -27,14 +27,14 @@ Hey there, ${name}! You're not ready to level up just yet. It seems like you nee
         }
     } else {
         let str = `
-┌─⊷ *LEVEL UP*
-▢ Previous level : *${user.level - 1}*
-▢ Current level : *${user.level}*
-▢ Role : *${user.role}*
+┌─⊷ *المستوى الأعلى*
+▢ المستوى السابق : *${user.level - 1}*
+▢ المستوى الحالي : *${user.level}*
+▢ دور : *${user.role}*
 └──────────────
 
-Woo-hoo, ${name}! You've soared to new heights and reached level ${user.level}! 🎉 Time to celebrate! 🎊
-Your newfound power will strike fear into the hearts of trolls, and the bots will bow before your command! Keep up the incredible work, and who knows what epic adventures await you next! 🌟
+وو-هو، ${name}! لقد ارتقت إلى آفاق جديدة ووصلت إلى المستوى ${user.level}! 🎉 حان الوقت للاحتفال! 🎊
+ستبث قوتك المكتشفة حديثًا الخوف في قلوب المتصيدين، وسوف تنحني الروبوتات أمام أوامرك! واصل العمل المذهل، ومن يدري ما هي المغامرات الملحمية التي تنتظرك بعد ذلك! 🌟
 `.trim();
 
         try {
@@ -48,6 +48,6 @@ Your newfound power will strike fear into the hearts of trolls, and the bots wil
 
 handler.help = ['levelup'];
 handler.tags = ['economy'];
-handler.command = ['lvl', 'levelup', 'level'];
+handler.command = ['رانك', 'levelup', 'لفل'];
 
 export default handler
