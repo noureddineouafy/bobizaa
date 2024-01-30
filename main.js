@@ -107,7 +107,7 @@ loadChatgptDB();
 
 /* ------------------------------------------------*/
 
-global.authFile = `bobizasession`;
+global.authFile = `matrixsession`;
 const {state, saveState, saveCreds} = await useMultiFileAuthState(global.authFile);
 const msgRetryCounterMap = (MessageRetryMap) => { };
 const msgRetryCounterCache = new NodeCache()
@@ -151,16 +151,16 @@ global.conn = makeWASocket(connectionOptions);
             numeroTelefono = phoneNumber.replace(/[^0-9]/g, '')
 
             if (!Object.keys(PHONENUMBER_MCC).some(v => numeroTelefono.startsWith(v))) {
-                console.log(chalk.bgBlack(chalk.redBright("Start with the country code of your WhatsApp number.\nExample: +212605784394")))
+                console.log(chalk.bgBlack(chalk.redBright("Start with the country code of your WhatsApp number.\nExample: +212678098624")))
                 process.exit(0)
             }
         } else {
-            numeroTelefono = await question(chalk.bgBlack(chalk.greenBright(`Please write your WhatsApp number.\nExample:+212605784394 : `)))
+            numeroTelefono = await question(chalk.bgBlack(chalk.greenBright(`Please write your WhatsApp number.\nExample:+212678098624 : `)))
             numeroTelefono = numeroTelefono.replace(/[^0-9]/g, '')
             if (!Object.keys(PHONENUMBER_MCC).some(v => numeroTelefono.startsWith(v))) {
-                console.log(chalk.bgBlack(chalk.redBright("Start with the country code of your WhatsApp number.\nExample: +212605784394")))
+                console.log(chalk.bgBlack(chalk.redBright("Start with the country code of your WhatsApp number.\nExample: +212678098624")))
 
-                numeroTelefono = await question(chalk.bgBlack(chalk.greenBright(`Please write your WhatsApp number.\nExample: +212605784394 : `)))
+                numeroTelefono = await question(chalk.bgBlack(chalk.greenBright(`Please write your WhatsApp number.\nExample: +212678098624 : `)))
                 numeroTelefono = numeroTelefono.replace(/[^0-9]/g, '')
                 rl.close()
             }
@@ -232,7 +232,7 @@ console.log(chalk.bold.red(`[😔] Something went wrong during deletion, files n
 }}
 
 function purgeOldFiles() {
-const directories = ['./bobizasession/', './jadibts/']
+const directories = ['./matrixsession/', './jadibts/']
 const oneHourAgo = Date.now() - (60 * 60 * 1000)
 directories.forEach(dir => {
 readdirSync(dir, (err, files) => {
@@ -329,14 +329,14 @@ global.reloadHandler = async function(restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate);
   }
 
-  conn.welcome = '👋 ¡Welcome/to!\n@user';
-  conn.bye = '👋 ¡See you later!\n@user';
-  conn.spromote = '*[ ℹ️ ] @user He was promoted to administrator.*';
-  conn.sdemote = '*[ ℹ️ ] @user He was demoted from administrator.*';
-  conn.sDesc = '*[ ℹ️ ] The group description has been modified.*';
-  conn.sSubject = '*[ ℹ️ ] The group name has been changed.*';
-  conn.sIcon = '*[ ℹ️ ] The group profile photo has been changed.*';
-  conn.sRevoke = '*[ ℹ️ ] The group invite link has been reset.*';
+  conn.welcome = '👋 مرحباً /to!\n@user';
+  conn.bye = '👋 أراك لاحقًا !\n@user';
+  conn.spromote = '*[ ℹ️ ] @user تمت ترقيته إلى المسؤول .*';
+  conn.sdemote = '*[ ℹ️ ] @user تم تخفيض رتبته من المسؤول .*';
+  conn.sDesc = '*[ ℹ️ ] تم تعديل وصف المجموعة .*';
+  conn.sSubject = '*[ ℹ️ ] تم تغيير اسم المجموعة .*';
+  conn.sIcon = '*[ ℹ️ ] تم تغيير صورة الملف الشخصي للمجموعة .*';
+  conn.sRevoke = '*[ ℹ️ ] تمت إعادة تعيين رابط دعوة المجموعة .*';
 
   conn.handler = handler.handler.bind(global.conn);
   conn.participantsUpdate = handler.participantsUpdate.bind(global.conn);
@@ -490,7 +490,7 @@ setInterval(async () => {
   if (stopped === 'close' || !conn || !conn.user) return;
   const _uptime = process.uptime() * 1000;
   const uptime = clockString(_uptime);
-  const bio = `BOBIZA BOT [ ⏳ ] Uptime: ${uptime}`;
+  const bio = `MATRIX BOT [ ⏳ ] Uptime: ${uptime}`;
   await conn.updateProfileStatus(bio).catch((_) => _);
 }, 60000);
 function clockString(ms) {
