@@ -2,7 +2,7 @@ let handler = async (m, { conn, text }) => {
     let who
     if (m.isGroup) who = m.mentionedJid[0]
     else who = m.chat
-    if (!who) throw '✳️ علامة المستخدم'
+    if (!who) throw '🌺 علامة المستخدم'
     let txt = text.replace('@' + who.split`@`[0], '').trim()
     if (!txt) throw '✳️ أدخل كمية *الذهب* التي تريد إضافتها'
     if (isNaN(txt)) throw '🔢 أرقام فقط'
