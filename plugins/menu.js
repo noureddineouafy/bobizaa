@@ -5,12 +5,15 @@ const caption =`
   ‎‎الذكاء الاصطناعي ومشتقاته
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁🤖
 
+*.bimg*
 *.bardai*
+*.aivoice*
 *.bingcreate*
 *.chawnyma*
 *.ai*
 *.ai2*
 *.dalle2*
+*.art*
 *.resvimg*
 *.chatgbt*
 *.drawing*
@@ -31,6 +34,7 @@ const caption =`
 *.ytv*
 *.yts*
 *.ytmp4*
+*.ytvideo*
 *.ytdoc*
 *.storyset*
 *.spotifysearch*
@@ -73,6 +77,10 @@ const caption =`
 *.recolor*
 *.qr*
 *.jadibot*
+*.tourl*
+*.ocr*
+*.imgonline*
+*.channel*
 
 
 🛡️‎‎صاحب البوت ‎‎
@@ -81,6 +89,7 @@ const caption =`
 *.tagall*
 *.setpp*
 *.owner*
+*.hidetag*
 *.cleartmp*
 
   البوت فيه ميزة التحميل التلقائي من انستغرام وفيسبوك ويوتوب ♥
