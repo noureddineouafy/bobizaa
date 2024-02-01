@@ -72,9 +72,9 @@ let handler = m => m;
        'ها وش فيك معي؟',  
 
      ];
-     }else if (/^فلسطين|فلسطين$/i.test(m.text)) { 
+     }else if (/^بوت|بوت$/i.test(m.text)) { 
      responses = [ 
-       '*فلسطين حرة*',  
+       '*ها وش فيك معي*',  
 
      ];
      }else if (/^اهلا$/i.test(m.text)) { 
