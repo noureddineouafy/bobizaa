@@ -103,7 +103,7 @@ const caption =`
 
 await conn.sendMessage( m.chat, {
         video: {
-          url: 'https://telegra.ph/file/bba27bc6b305ac6a5229d.mp4'
+          url: 'https://telegra.ph/file/ef372f08ea6a09b17a9d0.mp4'
         },
         caption: caption,
         gifPlayback: true,
