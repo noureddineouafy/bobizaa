@@ -7,7 +7,7 @@ try {
 let q = m.quoted ? m.quoted : m
 let mime = ((m.quoted ? m.quoted : m.msg).mimetype || '')
 let set
-if (/عميق/.test(command)) set = '-af equalizer=f=94:width_type=o:width=2:g=30'
+if (/ يوهان عميق/.test(command)) set = '-af equalizer=f=94:width_type=o:width=2:g=30'
 if (/منفوخ/.test(command)) set = '-af acrusher=.1:1:64:0:log'
 if (/تخين/.test(command)) set = '-af atempo=4/4,asetrate=44500*2/3'
 if (/صاخب/.test(command)) set = '-af volume=12'
