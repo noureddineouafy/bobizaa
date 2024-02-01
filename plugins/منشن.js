@@ -8,7 +8,7 @@ let oi = `*♚~الرساله:* ${pesan}`
 let teks = `*  * \n\n ${oi}\n\n*🗡┇الجروب :⇣*\n`
 for (let mem of participants) {
 teks += `*تفاعل ↫* @${mem.id.split('@')[0]}\n`}
-teks += `*KANA-BOT*\n\n*JOHAN*`
+teks += `*Nezuko-BOT*\n\n*JOHAN&kaneki*`
 conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, )
 }
 handler.help = ['tagall <mesaje>','invocar <mesaje>']
