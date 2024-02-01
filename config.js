@@ -8,20 +8,20 @@ import axios from 'axios';
 import moment from 'moment-timezone';
 
 global.owner = [
-  ['22237979043', '🔪 JOHAN ', true],
-  ['22237979043', ' 3MK 💸', true],
+  ['‪22231675561‬', '🔪 JOHAN ', true],
+  ['22231675561', ' 3MK 💸', true],
 ];
 
 global.xaxa = 'kana'
-global.suittag = ['22237979043', '22237979043'];
-global.prems = ['22237979043', '22237979043'];
+global.suittag = ['22231675561', '22231675561'];
+global.prems = ['22231675561', '22231675561'];
 
-global.packname = 'LUFFY ';
-global.author = '★LUFFY★';
-global.wm = '★LUFFY BOT★';
-global.titulowm = ' LUFFY ';
-global.titulowm2 = ` LUFFY `
-global.igfg = ' LUFFY ';
+global.packname = 'Nezuko🧸 ';
+global.author = '★Nezuko🌺★';
+global.wm = '★Nezuko BOT★';
+global.titulowm = ' Nezuko ';
+global.titulowm2 = ` Nezuko `
+global.igfg = ' Nezuko ';
 global.wait = '*⌛ _جاري التحميل..._*\n\n*▰▰▰▱▱▱▱▱*';
 
 global.imagen1 = fs.readFileSync('./Menu2.jpg');
@@ -50,7 +50,7 @@ global.mysticbot = 'https://chat.whatsapp.com/FE54Nj3CorLAcuEzpXZHA7';
 global.waitt = '*⌛ _جاري التحميل..._*\n\n*▰▰▰▱▱▱▱▱*';
 global.waittt = '*⌛ _جاري التحميل..._*\n\n*▰▰▰▱▱▱▱▱*';
 global.waitttt = '*⌛ _جاري التحميل..._*\n\n*▰▰▰▱▱▱▱▱*';
-global.nomorown = '22247072475';
+global.nomorown = '22231675561';
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf'];
 global.cmenut = '❖––––––『';
 global.cmenub = '┊✦ ';
