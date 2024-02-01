@@ -9,10 +9,10 @@ let user = global.db.data.users[m.sender]
     if (!canLevelUp(user.level, user.exp, global.multiplier)) {
         let { min, xp, max } = xpRange(user.level, global.multiplier)
       let lvl = `┓━━━━【 *الـتصـنـيف* 】━━━━┏
-┇ *☎️ الاسم* : ${name} ღ
-┇ *🚒 الفل :* *${user.level}*
-┇ *♟️ مصنف :* ${role}
-┇ *♨️ نقاط الخبرة :* *${user.exp - min}/${xp}*
+┇ *🤠 الاسم* : ${name} ღ
+┇ *🧮 الفل :* *${user.level}*
+┇ *⚡ مصنف :* ${role}
+┇ *🏹 نقاط الخبرة :* *${user.exp - min}/${xp}*
 ┛━━━⊰ Nezuko ⊱━━━┗
 
 *تحتاج ${max - user.exp} من نقاط الخبرة للوصول الي مستوي جديد*`
@@ -24,9 +24,9 @@ conn.sendFile(m.chat, pp, 'levelup.jpg', lvl, m)
     if (before !== user.level) {
         let teks = `عاش يحب! ${conn.getName(m.sender)} المستوي: ${user.level}`
         let str = `┓━━━━【 *الـتصـنـيف* 】━━━━┏
-┇♨️ *المستوي السابق :* *${before}*
-┇🎉 *المستوي الحالي :* *${user.level}*
-┇♟️ *التصنيف :* ${role} 
+┇🎗 *المستوي السابق :* *${before}*
+┇🎁 *المستوي الحالي :* *${user.level}*
+┇🏹 *التصنيف :* ${role} 
 ┛━━━⊰ Nezuko ⊱━━━┗`.trim()
         try {
             const img = await levelup(teks, user.level)
