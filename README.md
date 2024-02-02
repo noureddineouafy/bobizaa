@@ -1,7 +1,7 @@
 
 <h1 align="center">LUFFY BOTꫂ<br></h1>
 <p align="center">
-<img src="https://i.ibb.co/cLtCXVm/cheemspic.jpg" width="540" height="280" />
+<img src="https://ibb.co/zmFsf0x.jpg" width="540" height="280" />
 </p>
 
 <p align="center">
