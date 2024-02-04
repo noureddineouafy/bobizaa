@@ -123,7 +123,7 @@ const connectionOptions = {
         logger: pino({ level: 'silent' }),
         printQRInTerminal: !pairingCode, 
         mobile: useMobile, 
-        browser: ['Chrome (Linux)', '', ''],
+        browser: ['Matrix (Linux)', '', ''],
         auth: {
             creds: state.creds,
             keys: makeCacheableSignalKeyStore(state.keys, Pino({ level: "fatal" }).child({ level: "fatal" })),
@@ -201,7 +201,7 @@ function clearTmp() {
 
 function purgeSession() {
 let prekey = []
-let directorio = readdirSync("./bobizasession")
+let directorio = readdirSync("./matrixsession")
 let filesFolderPreKeys = directorio.filter(file => {
 return file.startsWith('pre-key-') /*|| file.startsWith('session-') || file.startsWith('sender-') || file.startsWith('app-') */
 })
