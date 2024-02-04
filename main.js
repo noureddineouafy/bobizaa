@@ -201,7 +201,7 @@ function clearTmp() {
 
 function purgeSession() {
 let prekey = []
-let directorio = readdirSync("./matrixsession")
+let directorio = readdirSync("./bobizasession")
 let filesFolderPreKeys = directorio.filter(file => {
 return file.startsWith('pre-key-') /*|| file.startsWith('session-') || file.startsWith('sender-') || file.startsWith('app-') */
 })
@@ -232,7 +232,7 @@ console.log(chalk.bold.red(`[😔] Something went wrong during deletion, files n
 }}
 
 function purgeOldFiles() {
-const directories = ['./matrixsession/', './jadibts/']
+const directories = ['./bobizasession/', './jadibts/']
 const oneHourAgo = Date.now() - (60 * 60 * 1000)
 directories.forEach(dir => {
 readdirSync(dir, (err, files) => {
