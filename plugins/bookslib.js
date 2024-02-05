@@ -35,8 +35,8 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
       }
     }
 };
-handler.help = ["bookslib *[index] [index]*"];
-handler.tags = ["downloader"];
+handler.help = ["bookslib"];
+handler.tags = ["pdf"];
 handler.command = /^(bookslib)$/i;
 export default handler;
 
