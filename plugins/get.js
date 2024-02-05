@@ -64,9 +64,8 @@ function formatSize(size) {
   return `${size.toFixed(2)} ${units[i]}`;
 }
 
-handler.help = ['fetch'];
+handler.help = ['get'];
 handler.tags = ['tools'];
-handler.alias = ['get', 'fetch'];
 handler.command = /^(fetch|get)$/i;
 
 export default handler;
