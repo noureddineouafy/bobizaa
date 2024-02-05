@@ -10,5 +10,5 @@ m.reply(`${hasil.result}`.trim())
 } catch {
 throw `*[❗] خطأ لايوجد*`
 }}
-handler.command = ['openai', 'بوت', 'ia', 'robot']
+handler.command = ['openai', 'نيزوكو', 'ia', 'robot']
 module.exports = handler
