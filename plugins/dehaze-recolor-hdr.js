@@ -84,7 +84,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 	}
 };
 handler.help = ["dehaze","recolor","hdr"];
-handler.tags = ["tools"];
+handler.tags = ["image-editor"];
 handler.command = ["dehaze","recolor","hd"];
 export default handler;
 

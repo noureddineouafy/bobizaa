@@ -7,7 +7,6 @@ const caption =`
 
 *.bimg*
 *.bardai*
-*.aivoice*
 *.bingcreate*
 *.chawnyma*
 *.ai*
