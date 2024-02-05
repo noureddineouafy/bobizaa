@@ -74,9 +74,9 @@ let handler = async (m, {
     }
 }
 handler.help = ["apkmirror"]
-handler.tags = ["internet"]
+handler.tags = ["applications"]
 handler.command = /^(apkmirror)$/i
-handler.premium = true
+handler.premium = false
 export default handler
 
 /* New Line */
