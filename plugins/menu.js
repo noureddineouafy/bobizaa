@@ -78,6 +78,10 @@ const caption =`
 *.qr*
 *.jadibot*
 *.tourl*
+*.ocr*
+*.imgonline*
+*.channel*
+*.hdphoto*
 
 🛡️‎‎صاحب البوت ‎‎
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁🏃
