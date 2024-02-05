@@ -41,7 +41,7 @@ let handler = async (m, {
     }
 }
 handler.help = ["alloschool"]
-handler.tags = ["internet"]
+handler.tags = ["morocco"]
 handler.command = /^alloschool|alloschoolget$/i
 export default handler
 
