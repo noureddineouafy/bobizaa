@@ -24,7 +24,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     if (res) await conn.sendFile(m.chat, res, '', '', m, true)
   }
 }
-handler.help = ['tts <lang> <text>']
+handler.help = ['tts']
 handler.tags = ['tools']
 handler.command = /^tts|audio$/i
 
