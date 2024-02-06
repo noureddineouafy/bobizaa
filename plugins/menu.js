@@ -114,7 +114,7 @@ await conn.sendMessage( m.chat, {
       } );
 }
 
-handler.help = ['allmenu']
-handler.tags = ['main']
+handler.help = ['menu']
+handler.tags = ['infobot']
 handler.command = ['menu'] 
 export default handler
