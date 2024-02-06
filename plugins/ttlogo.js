@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
 
-export default async function handler(m, { conn, args, text, command, usedPrefix, isCreator, isPrems }) {
+ async function handler(m, { conn, args, text, command, usedPrefix, isCreator, isPrems }) {
   let response = args.join(' ').split('|');
   if (!args[0]) throw 'يمكنك صناعة شعار تيكتوك مثال :\n\n*.ttlogo* bobiza|bot';
   conn.sendMessage(m.chat, {
@@ -16,4 +16,4 @@ export default async function handler(m, { conn, args, text, command, usedPrefix
 handler.help = ['ttlogo']
 handler.tags = ['logo'];
 handler.command = /^(ttlogo)$/i;
-export default handler;
+export default handler
