@@ -9,6 +9,8 @@ const handler = async (m, {conn, usedPrefix, command}) => {
   if (!audio.data) throw '*حذث خطأ راسل صاحب البوت*';
   conn.sendMessage(m.chat, {audio: audio.data, mimetype: 'audio/mpeg'}, {quoted: m});
 };
-handler.alias = ['tomp3', 'toaudio'];
-handler.command = /^to(mp3|audio)$/i;
+;
+handler.help = ["tomp3"]
+handler.tags = ["tools"]
+handler.command = /^(tomp3)$/i
 export default handler;

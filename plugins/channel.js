@@ -5,7 +5,7 @@ m.reply(`*قناتي على الواتساب:*\n
 *تابعني هناك♥*`)
 }
 handler.help = ['channel']
-handler.tags = ['info']
+handler.tags = ['infobot']
 handler.command = /^(channel)$/i
 
 export default handler;
