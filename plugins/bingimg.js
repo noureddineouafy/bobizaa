@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
     if (!text) return m.reply('هذا الامر خاص بتوليد صور من bing سوف أعطيك مثالا تكتب هكذا :\n\n*.bimg* a 26 years old boy salutes the national flag of morocco and he is wearing a shirt print is likemorocco flag and "bobiza" and 10 number anddima meghribe in small is written on it s back inbig and bold fonts, 3d illustration')
-    m.reply("تابع صاحب البوت في حساباته تشجيعا له ♥...\ninstagram.com/noureddine_ouafy")
+    m.reply("تابع صاحب البوت في حساباته تشجيعا له ♥...\ninstagram.com/stiven._.xxl")
 
     try {
         let response = await fetch(`https://api.maelyn.my.id/api/bingimage?prompt=${text}&apikey=nkI6Qg3tfZ`)
