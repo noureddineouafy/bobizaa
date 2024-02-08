@@ -37,7 +37,7 @@ let handler = async (m, { conn, command, usedPrefix }) => {
  }
 }
 
-handler.help = ['setppbotfull']
+handler.help = ['setpp']
 handler.tags = ['owner']
 handler.command = /^(setpp)$/i
 
