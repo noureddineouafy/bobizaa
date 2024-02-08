@@ -8,7 +8,7 @@ let handler = async (m, {
 }) => {
     await m.reply(wait)
     let res = await YesNo()
-    let stiker = await createSticker(false, res.image, "bobiza ", (res.answer).toUpperCase(), 30)
+    let stiker = await createSticker(false, res.image, "stiven ", (res.answer).toUpperCase(), 30)
         
     try {
         await m.reply(stiker)
@@ -16,9 +16,9 @@ let handler = async (m, {
         throw eror
     }
 }
-handler.help = ["bobiz"]
+handler.help = ["stiven"]
 handler.tags = ["sticker"]
-handler.command = /^(bobiz)$/i
+handler.command = /^(stive)$/i
 
 export default handler
 
