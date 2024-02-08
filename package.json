@@ -71,7 +71,7 @@
     "@xct007/tiktok-scraper":"*",
     "@prevter/tiktok-scraper":"*",
     "api-dylux": "^1.2.2",
-    "@vitalets/google-translate-api":"*",
+    "@vitalets/google-translate-api":"^8.0.0",
     "stream":"*",
     "pdfkit":"*",
     "aptoide-scraper":"*",
