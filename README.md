@@ -8,6 +8,7 @@ https://instagram.com/noureddine_ouafy
 get session code from this link
 
 https://replit.com/@bobiztestbot/bobiza-qrcode
- 
+
+Im not a dev bot just copy and past 😆 i steel leaning but it's haaaard 😸
  
 
