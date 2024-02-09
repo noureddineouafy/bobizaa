@@ -138,7 +138,7 @@ contextInfo: {
 externalAdReply: {
 title: 'stiven BOT 😺🪐',
 body: "the first Moroccan bot in the world 😺",
-thumbnailUrl: 'https://telegra.ph/Stiven-02-08',
+thumbnailUrl: 'https://telegra.ph/file/998a98d179a48609b0c09.jpg',
 sourceUrl: 'https://instagram.com/Stiven._.xxl',
 mediaType: 1,
 renderLargerThumbnail: true
