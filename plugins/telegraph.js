@@ -11,7 +11,7 @@ let handler = async (m) => {
   m.reply(`▢ ${media.length} Byte(s) 
 
 ▢ ${isTele ? '' : '(Unknown)'} 
-▢ *هذا هو رابط الصورة:* ${link}\n\n\nتابع صاحب البوت في حسابه\ninstagram.com/noureddine_ouafy
+▢ *هذا هو رابط الصورة:* ${link}\n\n\nتابع صاحب البوت في حسابه\ninstagram.com/stiven._.xxl
   `)
 }
 handler.help = ['tourl']
