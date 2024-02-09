@@ -7,7 +7,7 @@ let handler = async (m, {conn, text}) => {
       await await await conn.reply(m.chat, stdout.toString(), m)
     }
   } catch {
-    var update = execSync("git remote set-url origin https://github.com/AzamiJs/CuriosityBot-MD.git && git pull")
+    var update = execSync("git remote set-url origin https://github.com/noureddineouafy/bobizaa.git && git pull")
     await await await m.reply(update.toString())
   }
 };
