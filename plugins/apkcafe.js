@@ -14,7 +14,7 @@ let handler = async (m, {
         "d"
     ]
 
-    let [feature, inputs, inputs_, inputs__, inputs___] = text.split("|")
+    let [feature, inputs, inputs_, inputs__, inputs___] = text.split("+")
     if (!lister.includes(feature)) return m.reply("*هذا الامر خاص بتحميل التطبيقات من موقع \n https://apk.cafe/\nيمكنك تحميل التطبيقات من هذا الامر من خلال كتابة\n*.apkcafe s+instagram lite*\nبعد ان تحصل على رابط التطبيق تعود للبوت وتكتب له هذا الامر لتحميله\n*.apkcafe d+*(رابط التطبيق) \n\n\n*options*\n" + lister.map((v, index) => "  ○ " + v).join("\n"))
 
     if (lister.includes(feature)) {
