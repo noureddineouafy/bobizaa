@@ -138,14 +138,14 @@ contextInfo: {
 externalAdReply: {
 title: 'KILLUA BOT ♥',
 body: "بوت من تحرير الاسطوره يوسف چو 💖",
-thumbnailUrl: 'https://telegra.ph/file/2829c7653514416d207e2.jpg',
-sourceUrl: 'null',
+thumbnailUrl: 'https://telegra.ph/file/6c9b64aef666d07df79b4.jpg',
+sourceUrl: 'https://youtube.com/@JoAnimi1?si=3y1aUCmnTVzCVgIM',
 mediaType: 1,
 renderLargerThumbnail: true
 }}}, { quoted: m})
 
     /*conn.sendFile(m.chat, 'menu.png', text.trim(), m, null, )
-    /*conn.sendButton(m.chat, text.trim(), '▢ DyLux  ┃ ᴮᴼᵀ\n▢ Sígueme en Instagram\nhttps://null', pp, [
+    /*conn.sendButton(m.chat, text.trim(), '▢ DyLux  ┃ ᴮᴼᵀ\n▢ Sígueme en Instagram\nhttps://youtube.com/@JoAnimi1?si=3y1aUCmnTVzCVgIM', pp, [
       ['ꨄ︎ Apoyar', `${_p}donate`],
       ['⏍ Info', `${_p}botinfo`],
       ['⌬ Grupos', `${_p}gpdylux`]
