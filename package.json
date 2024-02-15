@@ -90,6 +90,8 @@
     "ws": "^8.14.2",
     "openai": "^3.1.0",
     "hxz-api":"*",
+    "fluid-spotify.js":"*",
+    "sanzy-spotifydl":"*",
     "yargs": "^17.3.1",
     "ytdl-core": "github:khlevon/node-ytdl-core#v4.11.4-patch.2"
   },
