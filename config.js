@@ -22,7 +22,7 @@ global.prems = ['201092544329'];
 
 global.packname = '[JoAnimi]-Killua☣️[3AMK]';
 global.author = '[JoAnimi]-Killua☣️[3AMK]';
-global.wm = '[JoAnimi]-Killua☣️[3AMK]';
+global.wm = 'bobiza';
 global.titulowm = '[JoAnimi]-Killua☣️[3AMK]';
 global.titulowm2 = `[JoAnimi]-Killua☣️[3AMK]`
 global.igfg = '[JoAnimi]-Killua☣️[3AMK]';
