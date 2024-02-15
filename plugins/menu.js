@@ -138,7 +138,7 @@ contextInfo: {
 externalAdReply: {
 title: 'KILLUA BOT ♥',
 body: "بوت من تحرير الاسطوره يوسف چو 💖",
-thumbnailUrl: 'https://telegra.ph/file/6c9b64aef666d07df79b4.jpg',
+thumbnailUrl: 'https://telegra.ph/file/730353035402da50bcb96.jpg',
 sourceUrl: 'https://youtube.com/@JoAnimi1?si=3y1aUCmnTVzCVgIM',
 mediaType: 1,
 renderLargerThumbnail: true
