@@ -20,11 +20,11 @@ global.owner = [
 global.suittag = ['201092544329'];
 global.prems = ['201092544329'];
 
-global.packname = '[JoAnimi]-Killua☣️[3AMK]';
-global.author = '[JoAnimi]-Killua☣️[3AMK]';
+global.packname = '[3AMK]';
+global.author = '[JoAnimi]-Killua☣️';
 global.wm = 'bobiza';
-global.titulowm = '[JoAnimi]-Killua☣️[3AMK]';
-global.titulowm2 = `[JoAnimi]-Killua☣️[3AMK]`
+global.titulowm = '[3AMK]';
+global.titulowm2 = `[JoAnimi]-Killua☣️`
 global.igfg = '[JoAnimi]-Killua☣️[3AMK]';
 global.wait = '*|🏃| loading...*\n*نحاول تلبية طلبكم لا تستعجلوا* ♥\null';
 global.imagen1 = fs.readFileSync('./Menu2.jpg');
