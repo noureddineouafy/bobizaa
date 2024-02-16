@@ -18,7 +18,7 @@ const defaultMenu = {
   header: '┏━━⊜ *_%category_* ',
   body: '┃⋄ %cmd %isdiamond %isPremium',
   footer: '┗━━━━━━━━⬣\n',
-  after: '*「 معلومات عن صاحب البوت 」* /*instagram:* /instagram.com/noureddine_ouafy /*youtube:* /youtube.com/@noureddineouafy2 /*facebook page:* /www.facebook.com/profile.php?id=100063533185520 l*script bot :* github.com/noureddineouafy',}
+  after: 'null',}
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
     let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
