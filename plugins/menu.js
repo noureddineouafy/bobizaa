@@ -143,7 +143,7 @@ sourceUrl: 'https://instagram.com/noureddine_ouafy',
 mediaType: 1,
 renderLargerThumbnail: true
 }}}, { quoted: m})
-
+conn.sendMessage(m.chat, {audio: { url: 'https://files.catbox.moe/ilmcgj.m4a'​ }, mimetype:'audio/mpeg', ptt:true }, {quoted:m})
     /*conn.sendFile(m.chat, 'menu.png', text.trim(), m, null, )
     /*conn.sendButton(m.chat, text.trim(), '▢ DyLux  ┃ ᴮᴼᵀ\n▢ Sígueme en Instagram\nhttps://www.instagram.com/fg98_ff', pp, [
       ['ꨄ︎ Apoyar', `${_p}donate`],
