@@ -16,7 +16,7 @@ ${result.lyrics}
 
     } catch (error) {
         console.error('Error:', error);
-        conn.reply(m.chat, `وقعت مشكلة راسل نورالدين `, m);
+        conn.reply(m.chat, `وقعت مشكلة راسلني `, m);
     }
 }
 
