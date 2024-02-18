@@ -255,9 +255,6 @@ const defaultMenu = {
 %readmore
   ≡ *K I L L U A | M E N U*
 `.trimStart(),
-  header: '┏━━⊜ *_%category_* ',
-  body: '┃⋄ %cmd %isdiamond %isPremium',
-  footer: '┗━━━━━━━━⬣\n',
   after: '*إستخدامك للبوت بشكل صحيح يعني أنك تزيد من إحتمالية أن يبقى البوت شغالا لمدة أطول . لذا إن واجهتك أي مشكلة لا تخجل من سؤال صاحب البوت .رقمه سوف تجده في الأسفل *\n+201008599375 واجه شكري ودعمي لاخي نور https://instagram.com/noureddine_ouafy',
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
