@@ -1,6 +1,8 @@
 import { promises } from 'fs'
 import { join } from 'path'
 import fetch from 'node-fetch'
+import { xpRange } from '../lib/levelling.js'
+//import { plugins } from '../lib/plugins.js'
 const defaultMenu = {
   before: `السلام عليكم 👋. 
 
