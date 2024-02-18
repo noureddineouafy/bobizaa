@@ -1,4 +1,4 @@
-let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems })  => m.reply(`
+ياlet handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems })  => m.reply(`
 *السلام عليكم✌️😳🌝*
 ┏━━ salam  *%name*
 👥 *Total user:* %totalreg 
@@ -266,11 +266,6 @@ renderLargerThumbnail: true
       ['⏍ Info', `${_p}botinfo`],
       ['⌬ Grupos', `${_p}gpdylux`]
     ],m, rpl)*/
-
-  } catch (e) {
-    conn.reply(m.chat, '❎ هناك خطأ في لائحة الاوامر', m)
-    throw e
-  }
 }
 
 handler.help = ['menu']
