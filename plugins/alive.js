@@ -257,6 +257,8 @@ let handler = async (m, { conn }) => {
   m.reply(caption)
 }
 
+ await conn.sendMessage(m.chat, {
+text: text,
 contextInfo: {
 externalAdReply: {
 title: 'KILLUA BOT ♥',
