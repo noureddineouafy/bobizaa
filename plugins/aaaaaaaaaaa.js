@@ -1,4 +1,4 @@
-ياlet handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems })  => m.reply(`
+let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems })  => m.reply(`
 *السلام عليكم✌️😳🌝*
 ┏━━ salam  *%name*
 👥 *Total user:* %totalreg 
