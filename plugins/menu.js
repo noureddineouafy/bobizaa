@@ -2,6 +2,22 @@ import { promises } from 'fs'
 import { join } from 'path'
 import fetch from 'node-fetch'
 
+const defaultMenu = {
+  before: `السلام عليكم 👋. 
+
+┏━━ salam  *%name*
+👥 *Total user:* %totalreg 
+⏰ *Uptime:* %muptime  
+┗━━━━━━━━━━⬣
+%readmore
+  ≡ *K I L L U A | M E N U*
+`.trimStart(),
+  header: '┏━━⊜  ',
+  body: '┃⋄ ',
+  footer: '┗━━━━━━━━⬣',
+  after: '*إستخدامك للبوت بشكل صحيح يعني أنك تزيد من إحتمالية أن يبقى البوت شغالا لمدة أطول . لذا إن واجهتك أي مشكلة لا تخجل من سؤال صاحب البوت .رقمه سوف تجده في الأسفل *\n+201008599375 واجه شكري ودعمي لاخي نور https://instagram.com/noureddine_ouafy',
+}
+
  conn.sendMessage(m.chat, {
 text: text,
 contextInfo: {
