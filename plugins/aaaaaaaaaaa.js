@@ -1,7 +1,5 @@
-import fetch from 'node-fetch'
-let handler = async (m, { conn }) => {
-  let caption = `
-
+let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems })  => m.reply(`
+*السلام عليكم✌️😳🌝*
 ┏━━ salam  *%name*
 👥 *Total user:* %totalreg 
 ⏰ *Uptime:* %muptime  
@@ -248,9 +246,7 @@ let handler = async (m, { conn }) => {
 ⟣┈┈┈┈┈┈⟢┈┈┈⟣┈┈┈┈┈┈┈⟢
 ╰────────────────────
 *─[ BY [JoAnimi] ]*🌟✨
-`.trim()
-  m.reply(caption)
-  }
+`.trim())
 
  await conn.sendMessage(m.chat, {
 text: text,
