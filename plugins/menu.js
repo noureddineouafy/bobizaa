@@ -3,9 +3,7 @@ import { join } from 'path'
 import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 //import { plugins } from '../lib/plugins.js'
-let tags = {
-  'morocco':'  ‎أوامر للمغاربة',
-  }
+
 const defaultMenu = {
   before: `السلام عليكم 👋. 
 
@@ -358,7 +356,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 text: text,
 contextInfo: {
 externalAdReply: {
-title: 'KILLUA BOT ♥',
+title: 'KILLUA BOT-EN ♥',
 body: "بوت من تحرير الاسطوره يوسف چو 💖",
 thumbnailUrl: 'https://telegra.ph/file/e1f63555f0063389c9845.jpg',
 sourceUrl: 'https://youtube.com/@JoAnimi1?si=3y1aUCmnTVzCVgIM',
