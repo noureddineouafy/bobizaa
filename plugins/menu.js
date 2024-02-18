@@ -1,27 +1,6 @@
 import { promises } from 'fs'
 import { join } from 'path'
 import fetch from 'node-fetch'
-import { xpRange } from '../lib/levelling.js'
-//import { plugins } from '../lib/plugins.js'
-let tags = {
-  ':'habd
-  gg 
-    hhd',
-  'applications':'‎ أوامر التطبيقات‎',
-  'drawing':'‎ توليد الصور‎ أوامر' ,
-  'ai':'‎ الذكاء الاصطناعي‎ أوامر',
-  'infobot':'‎ معلومات البوت‎',
-  'downloader':'‎ أوامر التحميلات',
-  'anime':'‎ أوامر عن  الأنيم',
-  'islam':'‎ الدين هو الاسلام‎',
-  'owner':'‎ اوامر صاحب البوت',
-  'search':'‎ أوامر البحث',
-  'audio-changer':'‎ تعديل الصوتيات‎',
-  'sticker':'‎ أوامر الملصقات',
-  'image-edit':'‎ تعديل الصور',
-  'pdf':'‎ pdf ومشتقاته‎',
-  'uploader':'‎‎ رفع الملفات‎',
-}
 const defaultMenu = {
   before: `السلام عليكم 👋. 
 
@@ -175,4 +154,4 @@ function clockString(ms) {
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
   return [d, 'd ', h, 'h ', m, 'm '].map(v => v.toString().padStart(2, 0)).join('')
-  }
+    }
