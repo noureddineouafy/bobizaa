@@ -276,11 +276,7 @@ renderLargerThumbnail: true
     throw e
   }
 }
-handler.help = ['menu']
-handler.tags = ['infobot']
-handler.command = ['menu','b','list'] 
-handler.register = false
-  
+
 handler.help = ['menu']
 handler.tags = ['infobot']
 handler.command = /^(menu)$/iq
