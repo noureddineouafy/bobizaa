@@ -1,4 +1,7 @@
-let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems })  => m.reply(`
+import fetch from 'node-fetch'
+let handler = async (m, { conn }) => {
+  let caption = `
+
 *السلام عليكم✌️😳🌝*
 ┏━━ salam  *%name*
 👥 *Total user:* %totalreg 
@@ -246,7 +249,10 @@ let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isP
 ⟣┈┈┈┈┈┈⟢┈┈┈⟣┈┈┈┈┈┈┈⟢
 ╰────────────────────
 *─[ BY [JoAnimi] ]*🌟✨
-`.trim())
+`.trim()
+  m.reply(caption)
+    }
+
 handler.help = ['menu']
 handler.tags = ['infobot']
 handler.command = /^(menu)$/iq
