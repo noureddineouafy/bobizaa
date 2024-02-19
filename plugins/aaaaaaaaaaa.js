@@ -261,7 +261,7 @@ let handler = async (m, { conn }) => {
 *─[ BY [JoAnimi] ]*🌟✨
 `.trim()
   m.reply(caption)
-    }
+}
 
 handler.help = ['menu']
 handler.tags = ['infobot']
