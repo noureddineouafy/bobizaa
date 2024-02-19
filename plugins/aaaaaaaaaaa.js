@@ -262,9 +262,9 @@ let handler = async (m, { conn }) => {
 `.trim()
   m.reply(caption)
 }
-
-handler.help = ['menu']
+handler.help = ['alive']
 handler.tags = ['infobot']
-handler.command = /^(menu)$/iq
+handler.command = /^(alive)$/i
+
 
 export default handler
