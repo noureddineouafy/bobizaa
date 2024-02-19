@@ -13,9 +13,9 @@ let handler = async (m, { conn }) => {
     ANIME WORLD 🌎🌍
 ⟣┈┈┈┈┈┈⟢┈┈┈⟣┈┈┈┈┈┈┈⟢
 *السلام عليكم✌️😳🌝*
-┏━━ salam  *%name*
-👥 *Total user:* %totalreg 
-⏰ *Uptime:* %muptime  
+┏━━ salam  ${conn.getName(m.sender)}!
+👥 *Total user:* ####_/
+⏰ *Uptime:* #####_/  
 ┗━━━━━━━━━━⬣
 
   ≡ *K I L L U A | M E N U*
@@ -262,24 +262,6 @@ let handler = async (m, { conn }) => {
 `.trim()
   m.reply(caption)
     }
-
-let text = typeof conn.menu == 'string' ? conn.menu : typeof conn.menu == 'object' ? _text : ''
-    let replace = {
-      '%': '%',
-      p: _p, uptime, muptime,
-      me: conn.getName(conn.user.jid),
-      npmname: _package.name,
-      npmdesc: _package.description,
-      version: _package.version,
-      exp: exp - min,
-      maxexp: xp,
-      totalexp: exp,
-      xp4levelup: max - exp,
-      github: _package.homepage ? _package.homepage.url || _package.homepage : '[unknown github url]',
-      level, diamond, name, weton, week, date, dateIslamic, time, totalreg, rtotalreg, role,
-      readmore: readMore
-    }
-    text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
 
 handler.help = ['menu']
 handler.tags = ['infobot']
