@@ -6,7 +6,7 @@ let handler = async (m, {
     conn,
     text
 }) => {
-    if (!text) throw "هذا الامر خاص بالبحث في اليوتوب مثلا \n*.ace* noureddine ouafy"
+    if (!text) throw "هذا الامر خاص بالبحث في اليوتوب مثلا \n*.ace* JoAnimi"
     const regex = /^https:\/\/www\.youtube\.com\/watch\?v=[A-Za-z0-9_-]+$/;
 const isMatch = regex.test(text);
 
