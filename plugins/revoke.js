@@ -11,7 +11,7 @@ let handler = async (m, { conn }) => {
 
 }
 handler.help = ['revoke']
-handler.tags = ['group']
+handler.tags = ['owner']
 handler.command = /^revoke$/i
 
 handler.group = true
