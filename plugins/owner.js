@@ -16,7 +16,7 @@ null
 
 *script bot :* null
 ╰────────────────────
-*─[ BY NOUREDDINE_OUAFY ]*🌟✨
+*─[ BY JoAnimi]*🌟✨
 `.trim()
   m.reply(caption)
 }
