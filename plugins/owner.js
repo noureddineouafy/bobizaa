@@ -5,8 +5,8 @@ let handler = async (m, { conn }) => {
 │👋 مرحبا يا , ${conn.getName(m.sender)}!
 │*「 معلومات عن صاحب البوت✌️😳🌝 」*
 
-*instagram:*
-null
+*His Official Number:*
++201008599375
 
 *youtube:*
 youtube.com/@joAnimi1
