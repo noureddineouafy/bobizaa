@@ -138,7 +138,7 @@ contextInfo: {
 externalAdReply: {
 title: '♧KOBA-BOT-MD♧,
 body: "♧أول بوت واتساب في العالم العربي♧",
-thumbnailUrl: 'https://i.imgur.com/WG865ZN.jpeg',
+thumbnailUrl: 'https://telegra.ph/file/2829c7653514416d207e2.jpg',
 sourceUrl: 'https://www.instagram.com/mouhaobass12?igsh=MW8xbXB1ejR5YWdoMw==',
 mediaType: 1,
 renderLargerThumbnail: true
