@@ -24,17 +24,15 @@ const defaultMenu = {
   before: `*_السلام عليكم_* . 
 
 ┏━━ salam  *%name*
-👥 *Total user:* %totalreg 
-🟢 *Uptime:* %muptime  
+🌏 *_Total user:_* %totalreg 
+🎋 *_Uptime:_* %muptime  
 ┗━━━━━━━━━━⬣
-%readmore
-  ≡ *B O B I Z A | M E N U*
+
+  ≡ *_KOBA-BOT-MD | M E N U_*
 `.trimStart(),
   header: '┏━━⊜ *_%category_* ',
   body: '┃⋄ %cmd %isdiamond %isPremium',
   footer: '┗━━━━━━━━⬣\n',
-  after: '*إستخدامك للبوت بشكل صحيح يعني أنك تزيد من إحتمالية أن يبقى البوت شغالا لمدة أطول . لذا إن واجهتك أي مشكلة لا تخجل من سؤال صاحب البوت .رقمه سوف تجده في الأسفل + شارك فيديوهات صاحب البوت تشجيعا له ان كان هذا البوت قد نال إعجابك*\n+212605784394',
-}
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
     let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
