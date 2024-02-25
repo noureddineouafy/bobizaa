@@ -138,7 +138,7 @@ contextInfo: {
 externalAdReply: {
 title: '♧KOBA-BOT-MD♧,
 body: "♧أول بوت واتساب في العالم العربي♧",
-thumbnailUrl: 'https://i.imgur.com/WG865ZN.jpeg',
+thumbnailUrl: 'https://telegra.ph/file/776d32d5a715b3c277bf0.jpg',
 sourceUrl: 'https://www.instagram.com/mouhaobass12?igsh=MW8xbXB1ejR5YWdoMw==',
 mediaType: 1,
 renderLargerThumbnail: true
@@ -173,4 +173,4 @@ function clockString(ms) {
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
   return [d, 'd ', h, 'h ', m, 'm '].map(v => v.toString().padStart(2, 0)).join('')
-      }
+    }
