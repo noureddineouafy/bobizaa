@@ -1,4 +1,4 @@
-Module_Exports({
+
 kingcmd: "tomp3",
 shortcut:['mp3','toaudio'],
 infocmd: "changes type to audio.",
@@ -24,6 +24,4 @@ else return console.log('File deleted successfully in TOAUDIO MP3 at : ' , media
 });
 
 }
-else return citel.send ("*Please, Reply To A video Message*")
-}
-)
+else return citel.send ("*Please, Reply To A video Message*");
