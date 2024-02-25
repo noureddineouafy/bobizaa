@@ -33,7 +33,7 @@ const defaultMenu = {
   header: '┏━━⊜ *_%category_* ',
   body: '┃⋄ %cmd %isdiamond %isPremium',
   footer: '┗━━━━━━━━⬣\n',
-  after: '*_♤KOBY-BOT-MD♧_*',
+  after: '*إستخدامك للبوت بشكل صحيح يعني أنك تزيد من إحتمالية أن يبقى البوت شغالا لمدة أطول . لذا إن واجهتك أي مشكلة لا تخجل من سؤال صاحب البوت .رقمه سوف تجده في الأسفل + شارك فيديوهات صاحب البوت تشجيعا له ان كان هذا البوت قد نال إعجابك*\n+212605784394',
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
@@ -137,7 +137,7 @@ text: text,
 contextInfo: {
 externalAdReply: {
 title: '♧KOBA-BOT-MD♧,
-body: "أول بوت واتساب في العالم العربي 💖",
+body: "♧أول بوت واتساب في العالم العربي♧",
 thumbnailUrl: 'https://telegra.ph/file/9c2df0a70a20ab0660743.jpg',
 sourceUrl: 'https://www.instagram.com/mouhaobass12?igsh=MW8xbXB1ejR5YWdoMw==',
 mediaType: 1,
@@ -173,4 +173,4 @@ function clockString(ms) {
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
   return [d, 'd ', h, 'h ', m, 'm '].map(v => v.toString().padStart(2, 0)).join('')
-}
+                              }
