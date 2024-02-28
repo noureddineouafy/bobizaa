@@ -3,3 +3,4 @@
 <p align="center">
 <img src="https://i.ibb.co/zmFsf0x/Monkey-D-Luffy-full-786576.jpg" width="540" height="280" />
 </p>
+<p>لربط لبوت لازم تتبع الخطوات التالية وشكرا لك</p>
