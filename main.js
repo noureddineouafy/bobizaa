@@ -107,7 +107,7 @@ loadChatgptDB();
 
 /* ------------------------------------------------*/
 
-global.authFile = `bobizasession`;
+global.authFile = `luffysession`;
 const {state, saveState, saveCreds} = await useMultiFileAuthState(global.authFile);
 const msgRetryCounterMap = (MessageRetryMap) => { };
 const msgRetryCounterCache = new NodeCache()
@@ -151,16 +151,16 @@ global.conn = makeWASocket(connectionOptions);
             numeroTelefono = phoneNumber.replace(/[^0-9]/g, '')
 
             if (!Object.keys(PHONENUMBER_MCC).some(v => numeroTelefono.startsWith(v))) {
-                console.log(chalk.bgBlack(chalk.redBright("Start with the country code of your WhatsApp number.\nExample: +212605784394")))
+                console.log(chalk.bgBlack(chalk.redBright("Start with the country code of your WhatsApp number.\nExample: +22247072475")))
                 process.exit(0)
             }
         } else {
-            numeroTelefono = await question(chalk.bgBlack(chalk.greenBright(`Please write your WhatsApp number.\nExample:+212605784394 : `)))
+            numeroTelefono = await question(chalk.bgBlack(chalk.greenBright(`Please write your WhatsApp number.\nExample:+22247072475 : `)))
             numeroTelefono = numeroTelefono.replace(/[^0-9]/g, '')
             if (!Object.keys(PHONENUMBER_MCC).some(v => numeroTelefono.startsWith(v))) {
-                console.log(chalk.bgBlack(chalk.redBright("Start with the country code of your WhatsApp number.\nExample: +212605784394")))
+                console.log(chalk.bgBlack(chalk.redBright("Start with the country code of your WhatsApp number.\nExample: +22247072475")))
 
-                numeroTelefono = await question(chalk.bgBlack(chalk.greenBright(`Please write your WhatsApp number.\nExample: +212605784394 : `)))
+                numeroTelefono = await question(chalk.bgBlack(chalk.greenBright(`Please write your WhatsApp number.\nExample: +22247072475 : `)))
                 numeroTelefono = numeroTelefono.replace(/[^0-9]/g, '')
                 rl.close()
             }
@@ -201,13 +201,13 @@ function clearTmp() {
 
 function purgeSession() {
 let prekey = []
-let directorio = readdirSync("./bobizasession")
+let directorio = readdirSync("./luffysession")
 let filesFolderPreKeys = directorio.filter(file => {
 return file.startsWith('pre-key-') /*|| file.startsWith('session-') || file.startsWith('sender-') || file.startsWith('app-') */
 })
 prekey = [...prekey, ...filesFolderPreKeys]
 filesFolderPreKeys.forEach(files => {
-unlinkSync(`./bobizasession/${files}`)
+unlinkSync(`./luffysession/${files}`)
 })
 } 
 
@@ -232,7 +232,7 @@ console.log(chalk.bold.red(`[😔] Something went wrong during deletion, files n
 }}
 
 function purgeOldFiles() {
-const directories = ['./bobizasession/', './jadibts/']
+const directories = ['./luffysession/', './jadibts/']
 const oneHourAgo = Date.now() - (60 * 60 * 1000)
 directories.forEach(dir => {
 readdirSync(dir, (err, files) => {
@@ -329,14 +329,14 @@ global.reloadHandler = async function(restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate);
   }
 
-  conn.welcome = '👋 ¡Welcome/to!\n@user';
-  conn.bye = '👋 ¡See you later!\n@user';
-  conn.spromote = '*[ ℹ️ ] @user He was promoted to administrator.*';
-  conn.sdemote = '*[ ℹ️ ] @user He was demoted from administrator.*';
-  conn.sDesc = '*[ ℹ️ ] The group description has been modified.*';
-  conn.sSubject = '*[ ℹ️ ] The group name has been changed.*';
-  conn.sIcon = '*[ ℹ️ ] The group profile photo has been changed.*';
-  conn.sRevoke = '*[ ℹ️ ] The group invite link has been reset.*';
+  conn.welcome = '👋 ة¡منور!\n@user';
+  conn.bye = '👋 ¡نراك لاحقا!\n@user';
+  conn.spromote = '*[ ℹ️ ] @user اصبح مشرفا*';
+  conn.sdemote = '*[ ℹ️ ] @user لم يعد مشرفا.*';
+  conn.sDesc = '*[ ℹ️ ] تم تغيير وصف لمجموعة.*';
+  conn.sSubject = '*[ ℹ️ ] تم تغيير اسم المجموعة.*';
+  conn.sIcon = '*[ ℹ️ ] تم تغيير خلفية المجموعة.*';
+  conn.sRevoke = '*[ ℹ️ ] تم تغيير رابط المممجموعة.*';
 
   conn.handler = handler.handler.bind(global.conn);
   conn.participantsUpdate = handler.participantsUpdate.bind(global.conn);
