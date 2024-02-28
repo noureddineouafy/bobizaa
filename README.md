@@ -7,5 +7,5 @@
 </div>
 <br>
 
-<h1>creeds.json لاخذ ملف </h1> <LI
+<h1>creds.json لاخذ ملف </h1> <LI
 <P>https://replit.com/@kofdemon87/LUFF-BOT?v=1</P>
