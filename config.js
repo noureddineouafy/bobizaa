@@ -10,15 +10,15 @@ import moment from 'moment-timezone';
 global.botnumber = ""
 
 global.owner = [
-  ['212605784394', 'bobiza', true],
+  ['212717457920', 'bobiza', true],
 
-  ['212605784394','bobiza', true],
-  ['212605784394'],
-  ['212605784394']
+  ['212717457920','bobiza', true],
+  ['212717457920'],
+  ['212717457920']
 ];
 
-global.suittag = ['212605784394'];
-global.prems = ['212605784394'];
+global.suittag = ['212717457920'];
+global.prems = ['212717457920'];
 
 global.packname = 'bobiza bot';
 global.author = 'bobiza';
