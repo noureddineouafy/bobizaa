@@ -21,7 +21,7 @@ let tags = {
   'uploader':'‎‎ رفع الملفات‎',
 }
 const defaultMenu = {
-  before: `السلام عليكم 👋. 
+  before: `> ≡ *MUSIC DOWNLOAD BOT* . 
 
 ┏━━ salam  *%name*
 👥 *Total user:* %totalreg 
