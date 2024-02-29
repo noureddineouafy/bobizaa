@@ -23,9 +23,9 @@ let tags = {
 const defaultMenu = {
   before: `> ≡ *MUSIC DOWNLOAD BOT* . 
 
-*👋🏻 Hey*  *`%name`*
-*├ T.User :* *`%totalreg`*
-*└ Uptime :* *`%muptime`*
+*👋🏻 Hey*  *%name*
+*├ T.User :* *%totalreg*
+*└ Uptime :* *%muptime*
 %readmore
   > *≡ MUSIC DOWNLOAD BOT*
 `.trimStart(),
