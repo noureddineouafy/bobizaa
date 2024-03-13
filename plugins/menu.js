@@ -21,14 +21,14 @@ let tags = {
   'uploader':'‎‎ رفع الملفات‎',
 }
 const defaultMenu = {
-  before: `السلام عليكم 👋. 
+  before: `welcome 𝙏𝙀𝘾𝙃-𝙂𝙊𝘿 (𝟮.𝟬) 👋. 
 
 ┏━━ salam  *%name*
 👥 *Total user:* %totalreg 
 ⏰ *Uptime:* %muptime  
 ┗━━━━━━━━━━⬣
 %readmore
-  ≡ *B O B I Z A | M E N U*
+  ≡ *𝙏𝙀𝘾𝙃-𝙂𝙊𝘿 (𝟮.𝟬) | M E N U*
 `.trimStart(),
   header: '┏━━⊜ *_%category_* ',
   body: '┃⋄ %cmd %isdiamond %isPremium',
