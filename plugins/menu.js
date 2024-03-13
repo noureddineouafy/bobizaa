@@ -4,7 +4,7 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 //import { plugins } from '../lib/plugins.js'
 let tags = {
-  'morocco':'🦄Ö𝗿Ðê𝗿§ †ð †𝗵ê †ê¢𝗵-𝗚ðÐ (𝟮.𝟬)🍁',
+  'morocco':'🦄Ö𝗿Ðê𝗿§ †𝗵ê †ê¢𝗵-𝗚ðÐ (𝟮.𝟬)🍁',
   'applications':'‎ أوامر التطبيقات‎',
   'drawing':'‎ توليد الصور‎ أوامر' ,
   'ai':'‎ الذكاء الاصطناعي‎ أوامر',
@@ -21,9 +21,9 @@ let tags = {
   'uploader':'‎‎ رفع الملفات‎',
 }
 const defaultMenu = {
-  before: `welcome 𝙏𝙀𝘾𝙃-𝙂𝙊𝘿 (𝟮.𝟬) 👋. 
+  before: ` 𝙏𝙀𝘾𝙃-𝙂𝙊𝘿 (𝟮.𝟬) 👋. 
 
-┏━━ salam  *%name*
+┏━━ Welcome  *%name*
 👥 *Total user:* %totalreg 
 ⏰ *Uptime:* %muptime  
 ┗━━━━━━━━━━⬣
@@ -33,7 +33,7 @@ const defaultMenu = {
   header: '┏━━⊜ *_%category_* ',
   body: '┃⋄ %cmd %isdiamond %isPremium',
   footer: '┗━━━━━━━━⬣\n',
-  after: '*𝐎𝐖𝐍𝐄𝐑_𝐍𝐀𝐌𝐄 :-🦄𝙏𝙀𝘾𝙃-𝙂𝙊𝘿 (𝟮.𝟬)🍁*\🦄𝐎𝐖𝐍𝐄𝐑_𝐍𝐔𝐌𝐁𝐄𝐑🍁 :-¤+𝟗𝟏𝟗𝟖𝟖𝟑𝟒𝟓𝟕𝟔𝟓𝟕¤',}
+  after: '*𝐎𝐖𝐍𝐄𝐑_𝐍𝐀𝐌𝐄 :-🦄𝙏𝙀𝘾𝙃-𝙂𝙊𝘿 (𝟮.𝟬)🍁*\🦄𝐎𝐖𝐍𝐄𝐑_𝐍𝐔𝐌𝐁𝐄𝐑🍁 :-*+919883457657*',}
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
     let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
