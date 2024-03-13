@@ -6,7 +6,7 @@ import { xpRange } from '../lib/levelling.js'
 let tags = {
   'morocco':'🦄Ö𝗿Ðê𝗿§ †𝗵ê †ê¢𝗵-𝗚ðÐ (𝟮.𝟬)🍁',
   'applications':'‎🦄𝐀𝐩𝐩𝐥𝐢𝐜𝐚𝐭𝐢𝐨𝐧 𝐂𝐨𝐦𝐚𝐧𝐝𝐬🍁',
-  'drawing':'‎ توليد الصور‎ أوامر' ,
+  'drawing':'‎🦄𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐞𝐝 𝐢𝐦𝐚𝐠𝐞 𝐂𝐨𝐦𝐚𝐧𝐝𝐬🍁' ,
   'ai':'‎ الذكاء الاصطناعي‎ أوامر',
   'infobot':'‎ معلومات البوت‎',
   'downloader':'‎ أوامر التحميلات',
