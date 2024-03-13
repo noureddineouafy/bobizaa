@@ -33,7 +33,7 @@ const defaultMenu = {
   header: '┏━━⊜ *_%category_* ',
   body: '┃⋄ %cmd %isdiamond %isPremium',
   footer: '┗━━━━━━━━⬣\n',
-  after: '*𝐎𝐖𝐍𝐄𝐑_𝐍𝐀𝐌𝐄 :-🦄𝙏𝙀𝘾𝙃-𝙂𝙊𝘿 (𝟮.𝟬)*\n+919883457657',}
+  after: '*𝐎𝐖𝐍𝐄𝐑_𝐍𝐀𝐌𝐄 :-🦄𝙏𝙀𝘾𝙃-𝙂𝙊𝘿 (𝟮.𝟬)🍁*\🦄𝐎𝐖𝐍𝐄𝐑_𝐍𝐔𝐌𝐁𝐄𝐑🍁 :-¤+𝟗𝟏𝟗𝟖𝟖𝟑𝟒𝟓𝟕𝟔𝟓𝟕¤',}
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
     let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
