@@ -33,10 +33,7 @@ const defaultMenu = {
   header: '┏━━⊜ *_%category_* ',
   body: '┃⋄ %cmd %isdiamond %isPremium',
   footer: '┗━━━━━━━━⬣\n',
-  after: '*Bₒₜ ₒWₙₑᵣ :₋ ₜₑcₕ Gₒd ₍₂.₀₎
-
-    ₒwₙₑᵣ ₙᵤₘbₑᵣ $₊₉₁₉₈₈₃₄₅₇₆₅₇$
-',
+  after: '*Bₒₜ ₒWₙₑᵣ :₋ ₜₑcₕ Gₒd ₍₂ ₊₉₁₉₈₈₃₄₅₇₆₅₇',
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
