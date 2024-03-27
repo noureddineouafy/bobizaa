@@ -4,36 +4,35 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 //import { plugins } from '../lib/plugins.js'
 let tags = {
-  'morocco':'  ‎أوامر للمغاربة',
-  'applications':'‎ أوامر التطبيقات‎',
-  'drawing':'‎ توليد الصور‎ أوامر' ,
-  'ai':'‎ الذكاء الاصطناعي‎ أوامر',
-  'infobot':'‎ معلومات البوت‎',
-  'downloader':'‎ أوامر التحميلات',
-  'anime':'‎ أوامر عن  الأنيم',
-  'islam':'‎ الدين هو الاسلام‎',
-  'owner':'‎ اوامر صاحب البوت',
-  'search':'‎ أوامر البحث',
-  'audio-changer':'‎ تعديل الصوتيات‎',
-  'sticker':'‎ أوامر الملصقات',
-  'image-edit':'‎ تعديل الصور',
-  'pdf':'‎ pdf ومشتقاته‎',
-  'uploader':'‎‎ رفع الملفات‎',
+  'morocco':'  `‎أوامر للمغاربة`',
+  'applications':'‎ `أوامر التطبيقات`‎',
+  'drawing':'‎ `توليد الصور‎ أوامر`' ,
+  'ai':'‎ `الذكاء الاصطناعي‎ أوامر`',
+  'infobot':'‎ `معلومات البوت`‎',
+  'downloader':'‎ `أوامر التحميلات`',
+  'anime':'‎ `أوامر عن  الأنيم`',
+  'islam':'‎ `الدين هو الاسلام`‎',
+  'owner':'‎ `اوامر صاحب البوت`',
+  'search':'‎ `أوامر البحث`',
+  'audio-changer':'‎ `تعديل الصوتيات`‎',
+  'sticker':'‎ `أوامر الملصقات`',
+  'image-edit':'‎ `تعديل الصور`',
+  'pdf':'‎ `pdf ومشتقاته`‎',
+  'uploader':'‎‎ `رفع الملفات`‎',
 }
 const defaultMenu = {
-  before: `السلام عليكم 👋. 
+  before: `*السلام عليكم* 👋. 
 
-┏━━ salam  *%name*
-👥 *Total user:* %totalreg 
+┏━━ hello  *%name* 
 ⏰ *Uptime:* %muptime  
 ┗━━━━━━━━━━⬣
 %readmore
-  ≡ *M A T R I X | M E N U*
+  ≡ *`M A T R I X | M E N U`*
 `.trimStart(),
   header: '┏━━⊜ *_%category_* ',
   body: '┃⋄ %cmd %isdiamond %isPremium',
   footer: '┗━━━━━━━━⬣\n',
-  after: '*إستخدامك للبوت بشكل صحيح يعني أنك تزيد من إحتمالية أن يبقى البوت شغالا لمدة أطول . لذا إن واجهتك أي مشكلة لا تخجل من سؤال صاحب البوت .رقمه سوف تجده في الأسفل + شارك فيديوهات صاحب البوت تشجيعا له ان كان هذا البوت قد نال إعجابك*\nwa.me/212637993227',
+  after: '```إستخدامك للبوت بشكل صحيح يعني أنك تزيد من إحتمالية أن يبقى البوت شغالا لمدة أطول . لذا إن واجهتك أي مشكلة لا تخجل من سؤال صاحب البوت .رقمه سوف تجده في الأسفل + شارك فيديوهات صاحب البوت تشجيعا له ان كان هذا البوت قد نال إعجابك*\nwa.me/212637993227```',
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
@@ -137,7 +136,7 @@ text: text,
 contextInfo: {
 externalAdReply: {
 title: 'MATRIX BOT ♥',
-body: "أول بوت واتساب في العالم العربي 💖",
+body: "MATRIX BOT MD V2",
 thumbnailUrl: 'https://telegra.ph/file/8427fd7a62cd5cfec8d97.jpg',
 sourceUrl: 'https://instagram.com/matrix__tv5',
 mediaType: 1,
@@ -158,7 +157,7 @@ renderLargerThumbnail: true
 }
 handler.help = ['menu']
 handler.tags = ['infobot']
-handler.command = ['menu','b','list'] 
+handler.command = ['menu','m','list'] 
 handler.register = false
 
 
