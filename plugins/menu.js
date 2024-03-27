@@ -27,7 +27,7 @@ const defaultMenu = {
 ⏰ *Uptime:* %muptime  
 ┗━━━━━━━━━━⬣
 %readmore
-  ≡ *`M A T R I X | M E N U`*
+  ≡ *M A T R I X | M E N U*
 `.trimStart(),
   header: '┏━━⊜ *_%category_* ',
   body: '┃⋄ %cmd %isdiamond %isPremium',
@@ -157,7 +157,7 @@ renderLargerThumbnail: true
 }
 handler.help = ['menu']
 handler.tags = ['infobot']
-handler.command = ['menu','m','list'] 
+handler.command = ['menu','b','list'] 
 handler.register = false
 
 
