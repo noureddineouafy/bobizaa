@@ -28,7 +28,7 @@ const defaultMenu = {
 ⏰ *Uptime:* %muptime  
 ┗━━━━━━━━━━⬣
 %readmore
-  ≡ *B O B I Z A | M E N U*
+  ≡ *ᗷ O ᗷ I ᘔ ᗩ | ᗰ E ᑎ ᑌ*
 `.trimStart(),
   header: '┏━━⊜ *_%category_* ',
   body: '┃⋄ %cmd %isdiamond %isPremium',
@@ -136,7 +136,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 text: text,
 contextInfo: {
 externalAdReply: {
-title: 'BOBIZA BOT ♥',
+title: '𝔹𝕆𝔹𝕀ℤ𝔸 𝔹𝕆𝕋  💖',
 body: "أول بوت واتساب في العالم العربي 💖",
 thumbnailUrl: 'https://telegra.ph/file/2829c7653514416d207e2.jpg',
 sourceUrl: 'https://instagram.com/mr.spy665',
