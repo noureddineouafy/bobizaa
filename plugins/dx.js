@@ -7,7 +7,7 @@ let handler = async (m, {
     text,
     command
 }) => {
-if (!text) return m.reply("ميزة الذكاء الاصطناعي \nExample:\n .dx ما هي عاصمة المغرب")
+if (!text) return m.reply("ميزة الذكاء الاصطناعي \nExample:\n .dx من هو عشعاش")
 await m.reply(wait)
 try {
 // Contoh penggunaan
