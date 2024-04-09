@@ -7,7 +7,7 @@ let wib = moment.tz('Africa/casablanca').format('HH:mm:ss')
   let month = date.getMonth() + 1;
   let day = date.getDate();
   
-  let clockString = `تاريخ اليوم : ${day}/${month}/${year}\n الساعة تشير لــ  : ${wib}`;
+  let clockString = `تـٌـٌٌـاريځـٌٌـٌٌ الُـِـِِـِِِـِِـِـيوُمـْـْْـْ : ${day}/${month}/${year}\n ال̷س̷اع̷ٍة ت̷ش̷ُي̷ر̷ ل̷ــ  : ${wib}`;
   
   // Mengirimkan hasil ke grup atau 
   conn.reply(m.chat, clockString, m);
