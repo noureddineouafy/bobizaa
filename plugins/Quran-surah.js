@@ -59,11 +59,12 @@ ${translatedTafsirEnglish.text}`;
   }
 };
 
-quranSurahHandler.help = ['quran [surah_number|surah_name]'];
-quranSurahHandler.tags = ['quran', 'surah'];
-quranSurahHandler.command = ['quran', 'surah']
+handler.help = ["Quran"];
+handler.tags = ["islam"];
+handler.command = /^Quran$/i;
 
-export default quranSurahHandler;
+export default handler;
+
 
   
   
