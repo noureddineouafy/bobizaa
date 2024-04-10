@@ -136,7 +136,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 text: text,
 contextInfo: {
 externalAdReply: {
-title: '𝔹𝕆𝔹𝕀ℤ𝔸 𝔹𝕆𝕋  💖',
+title: 'HMD 𝔹𝕆𝕋  💖',
 body: "أول بوت واتساب في العالم العربي 💖",
 thumbnailUrl: 'https://i.top4top.io/p_3022p8c8h1.jpg',
 sourceUrl: 'https://instagram.com/127.0.0.1_8888',
