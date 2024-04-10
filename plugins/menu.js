@@ -24,8 +24,8 @@ const defaultMenu = {
   before: `ال̷س̷ل̷ام̷ ع̷ٍل̷ي̷گ̷م̷ 👋. 
 
 ┏━━ 🆂🅰🅻🅰🅼  *%name*
-👥 *Total user:* %totalreg 
-⏰ *Uptime:* %muptime  
+👥 *🆃🅾🆃🅰🅻 🆄🆂🅴🆁:* %totalreg 
+⏰ *🆄🅿🆃🅸🅼🅴:* %muptime  
 ┗━━━━━━━━━━⬣
 %readmore
   ≡ *ᗷ O ᗷ I ᘔ ᗩ | ᗰ E ᑎ ᑌ*
@@ -138,8 +138,8 @@ contextInfo: {
 externalAdReply: {
 title: '𝔹𝕆𝔹𝕀ℤ𝔸 𝔹𝕆𝕋  💖',
 body: "أول بوت واتساب في العالم العربي 💖",
-thumbnailUrl: 'https://telegra.ph/file/2829c7653514416d207e2.jpg',
-sourceUrl: 'https://instagram.com/mr.spy665',
+thumbnailUrl: 'https://telegra.ph/file/310927ec040de3397eea6.jpg',
+sourceUrl: 'https://instagram.com/127.0.0.1_8888',
 mediaType: 1,
 renderLargerThumbnail: true
 }}}, { quoted: m})
