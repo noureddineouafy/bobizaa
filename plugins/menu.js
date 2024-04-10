@@ -138,7 +138,7 @@ contextInfo: {
 externalAdReply: {
 title: '𝔹𝕆𝔹𝕀ℤ𝔸 𝔹𝕆𝕋  💖',
 body: "أول بوت واتساب في العالم العربي 💖",
-thumbnailUrl: 'https://telegra.ph/file/310927ec040de3397eea6.jpg',
+thumbnailUrl: 'https://i.top4top.io/p_3022p8c8h1.jpg',
 sourceUrl: 'https://instagram.com/127.0.0.1_8888',
 mediaType: 1,
 renderLargerThumbnail: true
