@@ -77,7 +77,6 @@
     "stream":"*",
     "pdfkit":"*",
     "aptoide-scraper":"*",
-    "yt-search":"*",
     "wibusoft":"*",
     "gemini-ai":"*",
     "didyoumean":"*",
@@ -94,8 +93,6 @@
     "fluid-spotify.js":"*",
     "sanzy-spotifydl":"*",
     "yargs": "^17.3.1",
-    "ytdl-core": "github:khlevon/node-ytdl-core#v4.11.4-patch.2"
-  },
   "devDependencies": {
     "eslint": "^8.45.0",
     "eslint-config-google": "^0.14.0"
