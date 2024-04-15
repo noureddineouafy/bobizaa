@@ -935,8 +935,8 @@ export async function handler(chatUpdate) {
         if (!('welcome' in chat)) chat.welcome = true;
         if (!('detect' in chat)) chat.detect = true;
         if (!('detect2' in chat)) chat.detect2 = false;
-        if (!('sWelcome' in chat)) chat.sWelcome = '';
-        if (!('sBye' in chat)) chat.sBye = '';
+        if (!('sWelcome' in chat)) chat.sWelcome = 'true';
+        if (!('sBye' in chat)) chat.sBye = 'true';
         if (!('sPromote' in chat)) chat.sPromote = '';
         if (!('sDemote' in chat)) chat.sDemote = '';
         if (!('delete' in chat)) chat.antidelete = false;
@@ -960,8 +960,8 @@ export async function handler(chatUpdate) {
           welcome: true,
           detect: true,
 	  detect2: false,
-          sWelcome: '',
-          sBye: '',
+          sWelcome: 'true',
+          sBye: 'true',
           sPromote: '',
           sDemote: '',
           antidelete: false,
@@ -985,8 +985,8 @@ export async function handler(chatUpdate) {
       if (typeof settings !== 'object') global.db.data.settings[this.user.jid] = {};
       if (settings) {
         if (!('self' in settings)) settings.self = false;
-        if (!('autoread' in settings)) settings.autoread = false;
-        if (!('autoread2' in settings)) settings.autoread2 = false;
+        if (!('autoread' in settings)) settings.autoread = true;
+        if (!('autoread2' in settings)) settings.autoread2 = true;
         if (!('restrict' in settings)) settings.restrict = false;
         if (!('antiCall' in settings)) settings.antiCall = false;
         if (!('antiPrivate' in settings)) settings.antiPrivate = false;
@@ -997,8 +997,8 @@ export async function handler(chatUpdate) {
       } else {
         global.db.data.settings[this.user.jid] = {
           self: false,
-          autoread: false,
-          autoread2: false,
+          autoread: true,
+          autoread2: true,
           restrict: false,
           antiCall: false,
           antiPrivate: false,
