@@ -19,7 +19,7 @@ await m.reply('وقعت مشكلة :(')
 }
 handler.help = ["3ch3ach"]
 handler.tags = ["ai"]
-handler.command = /^(dx)$/i
+handler.command = /^(3ch3ach)$/i
 export default handler
 
 /* New Line */
