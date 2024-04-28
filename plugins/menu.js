@@ -4,7 +4,7 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 //import { plugins } from '../lib/plugins.js'
 let tags = {
-
+  'morocco':'  ‎أوامر للمغاربة',
   'applications':'‎ أوامر التطبيقات‎',
   'drawing':'‎ توليد الصور‎ أوامر' ,
   'ai':'‎ الذكاء الاصطناعي‎ أوامر',
@@ -14,7 +14,7 @@ let tags = {
   'islam':'‎ الدين هو الاسلام‎',
   'owner':'‎ اوامر صاحب البوت',
   'search':'‎ أوامر البحث',
-  'audio-changer':'‎ تعديل 79j',
+  'audio-changer':'‎ تعديل الصوتيات‎',
   'sticker':'‎ أوامر الملصقات',
   'image-edit':'‎ تعديل الصور',
   'pdf':'‎ pdf ومشتقاته‎',
