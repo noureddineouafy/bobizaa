@@ -20,7 +20,7 @@ const handler = async (m, { conn, text }) => {
           spotifyi += `	◦  *الفنان:* ${album.metadata.artists}\n`
           spotifyi += `	◦  *تاريخ النشر:* ${album.metadata.releaseDate}\n`   
           spotifyi += `	◦  *عدد الطراكات:* ${album.trackList.length}\n\n`   
-          spotifyi += `*جاري ارسال المقطع يرجى متابعة مالك البوت في صفحته تشجيعا له*♥\n\ninstagram.com/noureddine_ouafy .....`
+          spotifyi += `*جاري ارسال المقطع يرجى متابعة مالك البوت في صفحته تشجيعا له*♥\n\ninstagram.com/soufian_k23 .....`
         await conn.sendMessage(m.chat, {text: spotifyi.trim(), contextInfo: {forwardingScore: 9999999, isForwarded: true, "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": global.titulowm2, "containsAutoReply": true, "mediaType": 1, "thumbnail": img, "thumbnailUrl": img, "mediaUrl": isSpotifyUrl[0], "sourceUrl": isSpotifyUrl[0]}}}, {quoted: m});
         for (let i = 0; i < album.trackList.length; i++) {
             await conn.sendMessage(m.chat, {audio: album.trackList[i].audioBuffer, fileName: `${album.trackList[i].metadata.name}.mp3`, mimetype: 'audio/mpeg'}, {quoted: m});
@@ -36,7 +36,7 @@ const handler = async (m, { conn, text }) => {
           spotifyi += `	◦  *مدته:* ${track.duration}\n`
           spotifyi += `	◦  *الالبوم:* ${track.album.name}\n`                 
           spotifyi += `	◦  *تاريخه:* ${track.album.releasedDate}\n\n`   
-          spotifyi += `*جاري ارسال المقطع يرجى متابعة مالك البوت في صفحته تشجيعا له*♥\n\ninstagram.com/noureddine_ouafy .....`
+          spotifyi += `*جاري ارسال المقطع يرجى متابعة مالك البوت في صفحته تشجيعا له*♥\n\ninstagram.com/soufian_k23 .....`
         await conn.sendMessage(m.chat, {text: spotifyi.trim(), contextInfo: {forwardingScore: 9999999, isForwarded: true, "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": global.titulowm2, "containsAutoReply": true, "mediaType": 1, "thumbnail": img, "thumbnailUrl": img, "mediaUrl": track.url, "sourceUrl": track.url}}}, {quoted: m});
         await conn.sendMessage(m.chat, {audio: dlspoty, fileName: `${track.title}.mp3`, mimetype: 'audio/mpeg'}, {quoted: m});
 
@@ -52,7 +52,7 @@ const handler = async (m, { conn, text }) => {
         let spotifyi = `*• 💽 Spotify Download •*\n\n`
           spotifyi += `	◦  *Playlist:* ${playlistInfoByID.name}\n`
           spotifyi += `	◦  *Tracks totales:* ${tracks.length}\n\n`
-          spotifyi += `*جاري ارسال المقطع يرجى متابعة مالك البوت في صفحته تشجيعا له* ♥\n\ninstagram.com/noureddine_ouafy .....`
+          spotifyi += `*جاري ارسال المقطع يرجى متابعة مالك البوت في صفحته تشجيعا له* ♥\n\ninstagram.com/soufian_k23 .....`
         await conn.sendMessage(m.chat, {text: spotifyi.trim(), contextInfo: {forwardingScore: 9999999, isForwarded: true, "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": global.titulowm2, "containsAutoReply": true, "mediaType": 1, "thumbnail": img, "thumbnailUrl": img, "mediaUrl": playlistInfoByID.external_urls.spotify, "sourceUrl": playlistInfoByID.external_urls.spotify}}}, {quoted: m});
           let target = m.chat;
           if (m.isGroup && tracks.length > 20) {
@@ -73,7 +73,7 @@ for (let i = 0; i < tracks.length; i++) {
           spotifyi += `	◦  *المدة:* ${searchTrack.duration}\n`
           spotifyi += `	◦  *الالبوم:* ${searchTrack.album.name}\n`                 
           spotifyi += `	◦  *تاريخه:* ${searchTrack.album.releasedDate}\n\n`   
-          spotifyi += `*جاري ارسال المقطع يرجى متابعة مالك البوت في صفحته تشجيعا له* ♥\n\ninstagram.com/noureddine_ouafy .....`
+          spotifyi += `*جاري ارسال المقطع يرجى متابعة مالك البوت في صفحته تشجيعا له* ♥\n\ninstagram.com/soufian_k23 .....`
         await conn.sendMessage(m.chat, {text: spotifyi.trim(), contextInfo: {forwardingScore: 9999999, isForwarded: true, "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": global.titulowm2, "containsAutoReply": true, "mediaType": 1, "thumbnail": img, "thumbnailUrl": img, "mediaUrl": searchTrack.url, "sourceUrl": searchTrack.url}}}, {quoted: m});
         await conn.sendMessage(m.chat, {audio: dlspoty, fileName: `${searchTrack.title}.mp3`, mimetype: 'audio/mpeg'}, {quoted: m});
 }  

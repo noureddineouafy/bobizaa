@@ -25,7 +25,7 @@ const handler = async (m, {
             return m.reply("لا نتيجة")
         } else {
             for (let i = 0; i < data.length; i++) {
-                await conn.sendFile(m.chat, data[i], '', `instagram.com/noureddine_ouafy *(${i + 1}/${data.length})*`, m, false, {
+                await conn.sendFile(m.chat, data[i], '', `instagram.com/soufian_k23 *(${i + 1}/${data.length})*`, m, false, {
                     mentions: [m.sender]
                 });
             }

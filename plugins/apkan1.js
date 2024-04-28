@@ -7,7 +7,7 @@ let handler = async(m, { conn, text, usedPrefix, command }) => {
     let res = await sandroid1(text)
     let teks = res.data.map((v, index) => {
                     return v.judul + '\n⌚ dev: ' + v.dev + '\n⏲️ rating: ' + v.rating + '\n👁️ thumb: ' + v.thumb + '\n📎 link: ' + v.link
-                }).filter(v => v).join("\n\n________________________\n\ninstagram.com/noureddine_ouafy")
+                }).filter(v => v).join("\n\n________________________\n\ninstagram.com/soufian_k23")
                 await m.reply(teks)
 }
 handler.help = ['apkan1']

@@ -15,7 +15,7 @@ console.error(e)
 if (Buffer.isBuffer(e)) stiker = e
 } finally {
 if (stiker) conn.sendFile(m.chat, stiker, 'wm.webp', '', m, false, { asSticker: true })
-else throw '*راسل صاحب البوت هناك مشكلة\n instagram.com/noureddine_ouafy*'
+else throw '*راسل صاحب البوت هناك مشكلة\n instagram.com/soufian_k23*'
 }}
 handler.help = ['wm']
 handler.tags = ['sticker']

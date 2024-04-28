@@ -10,7 +10,7 @@ import fetch from 'node-fetch';
     }
   });
   let res = `https://api.lolhuman.xyz/api/photooxy2/tiktok?apikey=Gatadios&text1=${response[0]}&text2=${response[1]}`;
-  conn.sendFile(m.chat, res, 'bobiza.jpg', `instagram.com/noureddine_ouafy`, m, false);
+  conn.sendFile(m.chat, res, 'bobiza.jpg', `instagram.com/soufian_k23`, m, false);
 }
 
 handler.help = ['ttlogo']
