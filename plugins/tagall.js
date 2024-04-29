@@ -1,6 +1,6 @@
 let handler = async (m, { conn, text, participants, isAdmin, isOwner }) => {
     let users = participants.map(u => u.id).filter(v => v !== conn.user.jid)
-    m.reply(`*الموضوع:*\n${text ? `${text}\n` : ''}\n*أحد الأدمينز قام بالإشارة إليك  لا أعلم ماذا يريد منك إذهب إليه في الخاص وناقش معه لماذا قام بالإشارة اليك بواسطتي bot soufian *\n\ninstagram.com/soufian_k23 \n\n\n` + users.map(v => '│♪ @' + v.replace(/@.+/, '')).join`\n` + '\n⛾「 *تمت الإشارة للكل* 」⛾', null, {
+    m.reply(`*الموضوع:*\n${text ? `${text}\n` : ''}\n*أحد الأدمينز قام بالإشارة إليك  bot soufian*\n\ninstagram.com/soufian_k23 \n\n\n` + users.map(v => '│♪ @' + v.replace(/@.+/, '')).join`\n` + '\n⛾「 *تمت الإشارة للكل* 」⛾', null, {
         mentions: users
     })
 }
