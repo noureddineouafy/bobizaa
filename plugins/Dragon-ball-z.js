@@ -20,7 +20,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
       let imageBuffer = await imageRes.buffer();
 
       // Menggunakan fungsi sendImage untuk mengirim gambar ke WhatsApp
-      await conn.sendFile(m.chat, imageBuffer, 'Dragon-ball-z.jpg', '');
+      await conn.sendFile(m.chat, imageBuffer, 'Dragon.jpg', '');
 
       // Tambahkan jeda agar tidak mengirim gambar terlalu cepat
       await new Promise(resolve => setTimeout(resolve, 500));
@@ -31,7 +31,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   }
 }
 
-handler.help = ['dragon-ball-z']
+handler.help = ['dragon']
 handler.tags = ['anime']
-handler.command = /^dragon-ball-z$/i
+handler.command = /^dragon$/i
 export default handler
