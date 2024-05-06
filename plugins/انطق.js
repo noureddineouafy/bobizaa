@@ -1,6 +1,6 @@
 import gtts from 'node-gtts'
 import { readFileSync, unlinkSync } from 'fs'
-import { join } from 'path'
+import { dirname, join } from 'path'
 
 const defaultLang = 'ar'
 let handler = async (m, { conn, args, usedPrefix, command }) => {
@@ -35,11 +35,11 @@ function tts(text, lang = 'en-en') {
   return new Promise((resolve, reject) => {
     try {
       let tts = gtts(lang)
-      let filePath = join(global.__dirname(import.meta.url), '../tmp', (1 * new Date) + '.wav')
+      let filePath = join(dirname(new URL(import.meta.url).pathname), '../tmp', (1 * new Date) + '.wav')
       tts.save(filePath, text, () => {
         resolve(readFileSync(filePath))
         unlinkSync(filePath)
       })
     } catch (e) { reject(e) }
   })
-      }
+}
