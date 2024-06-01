@@ -7,7 +7,7 @@ import { promises } from 'fs'
 import { join } from 'path'
 let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems }) => {
 try {
-let vn = './Menu.png'
+let vn = './Menu4.mp4'
 let pp = imagen4
 let img = await(await fetch('https://telegra.ph/.')).buffer()
 let d = new Date(new Date + 3600000)
@@ -24,11 +24,11 @@ let rtotalreg = Object.values(global.db.data.users).filter(user => user.register
 let more = String.fromCharCode(8206)
 let readMore = more.repeat(850)   
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
-let str = `مرحبا بك/ي معاك/ي الهجرس اليماني-𝐵𝛩𝑇
-⎔ ⋅ ───━ •﹝ المطور🪭﹞• ━─── ⋅ ⎔
+let str = `مرحبا بك/ي معاك/ي سفيان كرومي-𝐵𝛩𝑇
+⎔ ⋅ ───━ •﹝  المطور🪭﹞• ━─── ⋅ ⎔
 KERROUMI SOUFIAN BOT
- ───━ •﹝ التطبيقات﹞• ━─── 
-.apk
+ ───━ •﹝  التطبيقات ﹞• ━─── 
+.apk 
 .apk2
  ───━ •﹝ تصفية صور﹞• ━─── 
 .hd
