@@ -31,7 +31,7 @@ ${usedPrefix + command} FACEBOOK`
 						}
 					}}, {quoted: m})
 					}).catch(err => {
-					m.reply('حذث خطأ حاول لاحقا او راسل\ninstagram.com/noureddine_ouafy')
+					m.reply('حذث خطأ حاول لاحقا او راسل\ninstagram.com/soufian_k23')
 					})
 }
 handler.help = ['bingsearch']

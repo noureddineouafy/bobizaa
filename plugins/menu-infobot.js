@@ -180,7 +180,7 @@ let tags = {
 	title: 'قسم خاص معلومات عن البوت',
 	body: 'اليك الاوامر الخاصة بهذا القسم',
 	thumbnailUrl: 'https://telegra.ph/file/22455a32e324068fa1922.jpg',
-	sourceUrl: 'instagram.com/noureddine_ouafy',
+	sourceUrl: 'instagram.com/soufian_k23',
 	mediaType: 1,
 	renderLargerThumbnail: true
 	}}})
