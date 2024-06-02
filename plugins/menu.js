@@ -68,8 +68,13 @@ KERROUMI SOUFIAN BOT
 - .emojimix
 
 ───━ • تيك توك • ━───
-- .tiktok
-
+- .tiktok1
+───━ • انستاغرام • ━───
+- .soufian
+───━ • تويتر • ━───
+- .twitter
+───━ • ميديافاير • ━───
+- .mediafire1
 ⎔ ⋅ ──━ • SOUFIAN KERROUMI BOT • ━── ⋅ ⎔
 `.trim();
 
