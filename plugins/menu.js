@@ -32,7 +32,7 @@ let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isP
 ╰─── • ──── • ────╯
 
 ⎔ ⋅ ──━ • المطور🪭 • ━── ⋅ ⎔
-KERROUMI SOUFIAN BOT
+    KERROUMI SOUFIAN BOT
 
 ───━ • التطبيقات • ━───
 - .apk 
@@ -68,14 +68,27 @@ KERROUMI SOUFIAN BOT
 - .emojimix
 
 ───━ • تيك توك • ━───
+
 - .tiktok1
+
 ───━ • انستاغرام • ━───
+
 - .soufian
+
 ───━ • تويتر • ━───
+
 - .twitter
+
 ───━ • ميديافاير • ━───
+
 - .mediafire1
-⎔ ⋅ ──━ • SOUFIAN KERROUMI BOT • ━── ⋅ ⎔
+
+
+⎔⋅──━•*SOUFIAN-KERROUMI*•━──⋅⎔
+ ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
+        💝 تابعني على 💝
+https://instagram.com/soufian_k23
+ ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️
 `.trim();
 
         let buttonMessage = {
