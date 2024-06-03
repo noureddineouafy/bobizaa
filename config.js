@@ -17,8 +17,8 @@ global.owner = [
   ['212717457920']
 ];
 
-global.suittag = ['212717457920'];
-global.prems = ['212717457920'];
+global.suittag = [212658594530'];
+global.prems = [212658594530'];
 
 global.packname = 'bobiza bot';
 global.author = 'bobiza';
