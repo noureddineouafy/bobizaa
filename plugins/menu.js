@@ -8,10 +8,9 @@ import { join } from 'path';
 
 let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems }) => {
     try {
-        let vn = './Menu4.mp4';
-        let img = await (await fetch('https://telegra.ph/.')).buffer();
-        let d = new Date(new Date + 3600000);
-        let locale = 'ar';
+        let imgUrl = 'https://mallucampaign.in/images/img_1717617791.jpg';  // Use the correct URL
+        let d = new Date(new Date().getTime() + 3600000);
+        let locale = 'en';
         let week = d.toLocaleDateString(locale, { weekday: 'long' });
         let date = d.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric' });
         let _uptime = process.uptime() * 1000;
@@ -26,86 +25,80 @@ let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isP
         let taguser = '@' + m.sender.split("@s.whatsapp.net")[0];
 
         let str = `
-╭─── • ──── • ────╮
-        مرحباً بك/ي 🤗
-      معاك/ي سفيان كرومي 🎉
-╰─── • ──── • ────╯
-
-⎔ ⋅ ──━ • المطور🪭 • ━── ⋅ ⎔
-    KERROUMI SOUFIAN BOT
-
-───━ • التطبيقات • ━───
-- .apk 
-- .apk2
-
-───━ • تصفية صور • ━───
-- .hd
-- .remini2
-
-───━ • الذكاء الاصطناعي • ━───
-- .gpt2
-- .gemini
-- .doulingo
-- .bobiza 
-
-───━ • يوتيوب • ━───
-- .yts
-- .song
-- .video
-
-───━ • الدين الاسلامي • ━───
-- .adhan
-- .asmaeallah
-- .ayati
-- .bader
-- .coran
-- .hizb
-
-───━ • ملصقات • ━───
-- .s
-- .tovideo
-- .toimage
-- .emojimix
-
-───━ • تيك توك • ━───
-
-- .tiktok1
-
-───━ • انستاغرام • ━───
-
-- .soufian
-
-───━ • تويتر • ━───
-
-- .twitter
-
-───━ • ميديافاير • ━───
-
-- .mediafire1
-
-
-⎔⋅──━•*SOUFIAN-KERROUMI*•━──⋅⎔
- ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
-        💝 تابعني على 💝
-https://instagram.com/soufian_k23
- ♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️♥️
+╭───[ Welcome ]───╮
+│
+│  👋 ${taguser}
+│  🤖 Soufian Kerroumi
+│
+├────────────────────
+│ Available Commands:
+│
+│ 📱 Applications:
+│   ├─ 🟢 .apk
+│   ├─ 🟢 .apk2
+│
+│ 🖼 Photo Editing:
+│   ├─ 🟢 .hd
+│   ├─ 🟢 .remini2
+│   └─ 🟢 .rem
+│
+│ 🧠 AI Commands:
+│   ├─ 🟢 .kerroumi
+│   ├─ 🟢 .gpt2
+│   ├─ 🟢 .gemini
+│   ├─ 🟢 .doulingo
+│   └─ 🟢 .bobiza
+│
+│ 📺 YouTube:
+│   ├─ 🟢 .yts
+│   ├─ 🟢 .song
+│   └─ 🟢 .video
+│
+│ 🕌 Islamic Commands:
+│   ├─ 🟢 .adhan
+│   ├─ 🟢 .asmaeallah
+│   ├─ 🟢 .ayati
+│   ├─ 🟢 .bader
+│   ├─ 🟢 .coran
+│   └─ 🟢 .hizb
+│
+│ 📸 Stickers:
+│   ├─ 🟢 .s
+│   ├─ 🟢 .tovideo
+│   ├─ 🟢 .toimage
+│   └─ 🟢 .emojimix
+│
+│ 🎵 TikTok:
+│   └─ 🟢 .tiktok1
+│
+│ 📷 Instagram:
+│   └─ 🟢 .soufian
+│
+│ 🐦 Twitter:
+│   └─ 🟢 .twitter
+│
+│ 📁 Mediafire:
+│   └─ 🟢 .mediafire1
+│
+╰────────────────────
+❤ SOUFIAN KERROUMI ❤
 `.trim();
 
         let buttonMessage = {
-            video: { url: vn },
+            image: { url: imgUrl },
             caption: str,
             mentions: [m.sender],
-            footer: '' + wm,
+            footer: '',
             headerType: 4,
             contextInfo: {
                 mentionedJid: [m.sender],
                 externalAdReply: {
                     showAdAttribution: true,
-                    mediaType: 'VIDEO',
+                    mediaType: 1,
                     mediaUrl: null,
                     title: '⁨SOUFIAN KERROUMI👑',
                     body: null,
-                    thumbnail: img,
+                    thumbnail: null,
                     sourceUrl: 'https://instagram.com/soufian_k23'
                 }
             }
@@ -115,11 +108,11 @@ https://instagram.com/soufian_k23
 
     } catch (e) {
         console.error(e);
-        conn.reply(m.chat, '[❗خطاء❗]', m);
+        conn.reply(m.chat, '[❗Error❗]', m);
     }
 };
 
-handler.command = /^(اوامر|menu|الاوامر|مهام|المهام)$/i;
+handler.command = /^(commands|menu)$/i;
 handler.exp = 20;
 handler.fail = null;
 export default handler;
