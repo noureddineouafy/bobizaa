@@ -10,9 +10,9 @@ import moment from 'moment-timezone';
 global.botnumber = ""
 
 global.owner = [
-  ['212717457920', 'bobiza', true],
+  ['212717457920', 'مزيكا الليبي 😋❤️✨.', true],
 
-  ['212717457920','bobiza', true],
+  ['212717457920','مزيكا الليبي 😋❤️✨.', true],
   ['212717457920'],
   ['212717457920']
 ];
@@ -21,11 +21,11 @@ global.suittag = ['212717457920'];
 global.prems = ['212717457920'];
 
 global.packname = 'bobiza bot';
-global.author = 'bobiza';
-global.wm = 'bobiza';
-global.titulowm = 'bobiza';
-global.titulowm2 = `bobiza`
-global.igfg = 'bobiza';
+global.author = 'مزيكا الليبي 😋❤️✨.';
+global.wm = 'مزيكا الليبي 😋❤️✨.';
+global.titulowm = 'مزيكا الليبي 😋❤️✨.';
+global.titulowm2 = `مزيكا الليبي 😋❤️✨.`
+global.igfg = 'مزيكا الليبي 😋❤️✨.';
 global.wait = '*|🏃| loading...*\n*نحاول تلبية طلبكم لا تستعجلوا* ♥\ninstagram.com/noureddine_ouafy';
 global.imagen1 = fs.readFileSync('./Menu2.jpg');
 global.imagen2 = fs.readFileSync('./src/nuevobot.jpg');
