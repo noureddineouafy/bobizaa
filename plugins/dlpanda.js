@@ -28,7 +28,7 @@ const handler = async (m, {
             }
         } else {
             for (let i = 0; i < data.video.length; i++) {
-                await conn.sendFile(m.chat, data.video[i].src, '', `instagram.com/noureddine_ouafy *(${i + 1}/${data.video.length})*`, m, false, {
+                await conn.sendFile(m.chat, data.video[i].src, '', `instagram.com/soufian_k23 *(${i + 1}/${data.video.length})*`, m, false, {
                     mentions: [m.sender]
                 });
             }

@@ -6,7 +6,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
   const res = await fetch(`https://api.ikyy.my.id/tiktoksearch?text=${text}`);	
   const data = await res.json();
   const json = data.result[0];
-  await conn.sendFile(m.chat, json.play, 'tiktok.mp4', `instagram.com/noureddine_ouafy 
+  await conn.sendFile(m.chat, json.play, 'tiktok.mp4', `instagram.com/soufian_k23 
 
 
 *📛:صاحب الفيديو* ${json.author}

@@ -11,7 +11,7 @@ async function handler(m, { conn, usedPrefix, command }) {
             const api = await fetch(`https://api.betabotz.eu.org/api/tools/remini?url=${out}&apikey=beta-Nourr123`);
             const image = await api.json();
             const { url } = image;
-            conn.sendFile(m.chat, url, null, 'instagram.com/noureddine_ouafy', m);
+            conn.sendFile(m.chat, url, null, 'instagram.com/soufian_k23', m);
         } else {
             m.reply(`هذا الامر خاص بزيادة جودة اي صورة يكفي فقط ان ترسل للبوت الصورة وتقوم بالاشارة اليها وتكتب :\n*${usedPrefix + command}*`);
         }
